@@ -1,6 +1,7 @@
 "use client";
 
 import { Popover, Transition } from "@headlessui/react";
+// eslint-disable-next-line import/no-named-as-default
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";

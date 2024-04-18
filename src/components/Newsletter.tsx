@@ -11,11 +11,12 @@ export function Newsletter() {
   const processForm = async (data: FormData) => {
     await addSubscriberToForm(data);
     router.push("/newsletter/dzieki");
+    return;
   };
 
   return (
     <form
-      action={(data) => processForm(data)}
+      action={processForm}
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -46,12 +47,15 @@ export function Newsletter() {
         />
         <Button type="submit">{"Dołącz >>"}</Button>
       </div>
-      <p className="pt-1 text-[8px]">
+      <p className="pt-4 text-xxs">
         „Zapisując się do newslettera, wyrażasz zgodę na otrzymywanie informacji
         o nowościach, promocjach, produktach i usługach programistafrontend.pl.
         Administratorem Twoich danych osobowych będzie{" "}
-        <strong>Daniel Noworyta z siedzibą w Bytom 41907, Polska</strong>. Twoje
-        dane będą przetwarzane do celów związanych z wysyłką newslettera”
+        <strong className={"font-semibold"}>
+          Daniel Noworyta z siedzibą w Bytom 41907, Polska
+        </strong>
+        . Twoje dane będą przetwarzane do celów związanych z wysyłką
+        newslettera”
       </p>
     </form>
   );

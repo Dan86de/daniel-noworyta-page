@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
+import { Article } from "@/components/Article.tsx";
 import { Container } from "@/components/Container.tsx";
 import { Newsletter } from "@/components/Newsletter.tsx";
 import {
@@ -9,6 +10,7 @@ import {
   LinkedInIcon,
   XIcon,
 } from "@/components/SocialIcons.tsx";
+import { type ArticleWithSlug, getAllArticles } from "@/lib/articles.ts";
 
 function SocialLink({
   icon: Icon,
@@ -23,12 +25,13 @@ function SocialLink({
   );
 }
 
-export default function Home() {
+export default async function Home() {
+  const articles: ArticleWithSlug[] = (await getAllArticles()).slice(0, 4);
   return (
     <>
       <Container className="mt-9">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-          Fullstack Developer, Specjalista ds. Przekwalifikowania.
+          Fullstack Developer, Specjalista ds. Przekwalifikowania na IT.
         </h1>
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
           Daniel Noworyta, programista i specjalista ds. przekwalifikowania.
@@ -61,11 +64,11 @@ export default function Home() {
       </Container>
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          {/*<div className="flex flex-col gap-16">*/}
-          {/*  {articles.map((article) => (*/}
-          {/*    <Article key={article.slug} article={article} />*/}
-          {/*  ))}*/}
-          {/*</div>*/}
+          <div className="flex flex-col gap-16">
+            {articles.map((article) => (
+              <Article key={article.slug} article={article} />
+            ))}
+          </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />
             {/*<Resume />*/}

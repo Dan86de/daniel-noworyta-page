@@ -9,6 +9,7 @@ export default {
   darkMode: "selector",
   theme: {
     fontSize: {
+      xxs: ["0.625rem", { lineHeight: "1rem" }],
       xs: ["0.8125rem", { lineHeight: "1.5rem" }],
       sm: ["0.875rem", { lineHeight: "1.5rem" }],
       base: ["1rem", { lineHeight: "1.75rem" }],
