@@ -19,16 +19,16 @@ export function Newsletter() {
       action={processForm}
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
     >
-      <h2 className="flex text-sm items-center font-semibold text-zinc-900 dark:text-zinc-100">
+      <h2 className="flex text-md items-center font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6" />
-        <span className="ml-3">
-          Newsletter <em>Programistafrontend</em> o tym:
+        <span className="ml-3 pt-0.5">
+          Newsletter <em>Programistafrontend</em>
         </span>
       </h2>
 
       <ul className="list-disc pl-4 pt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        <li>jak uczyć się programowania na własną rękę?</li>
-        <li>jak się przekwalifikować i dostać pracę w IT?</li>
+        <li>jak uczyć się programowania samemu?</li>
+        <li>jak zmienić branżę i dostać pracę w IT?</li>
       </ul>
       <p className="text-sm text-zinc-800 dark:text-zinc-400 pt-2">
         Konkrety, które sam chciałem dostać na początku.
