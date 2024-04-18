@@ -1,22 +1,38 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/styles/tailwind.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Providers } from "@/app/providers.tsx";
+import { Layout } from "@/components/Layout.tsx";
 
 export const metadata: Metadata = {
-  title: "Daniel Noworyta - Strona główna",
+  title: {
+    template: "%s - Daniel Noworyta",
+    default:
+      "Daniel Noworyta - Fullstack Developer, Specjalista ds. Przekwalifikowania",
+  },
   description:
-    "Specjalista ds. Przekwalifikowania: Pomagam w Przejściu do Branży IT",
+    "Daniel Noworyta, programista i specjalista ds. przekwalifikowania. Jestem załozycielem kanału Programistafrontend na YouTube, gdzie dzielę się swoją wiedzą i doświadczeniem związanym z programowaniem.",
+  alternates: {
+    types: {
+      "application/rss+xml": `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+    },
+  },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pl" className="h-full antialiased" suppressHydrationWarning>
+      <body className="flex h-full bg-zinc-50 dark:bg-zinc-950">
+        <Providers>
+          <div className="flex w-full">
+            <Layout>{children}</Layout>
+          </div>
+        </Providers>
+      </body>
     </html>
   );
 }
