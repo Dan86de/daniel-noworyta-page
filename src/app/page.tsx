@@ -1,9 +1,53 @@
+import Link from "next/link";
+import React from "react";
+
+import { Container } from "@/components/Container.tsx";
+import {
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  XIcon,
+} from "@/components/SocialIcons.tsx";
+
+function SocialLink({
+  icon: Icon,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof Link> & {
+  icon: React.ComponentType<{ className?: string }>;
+}) {
+  return (
+    <Link className="group -m-1 p-1" {...props}>
+      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+    </Link>
+  );
+}
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className={"text-4xl text-red-500"}>
-        {"Hej hej, witaj na stronie głównej!"}
+    <Container className="mt-9">
+      <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+        Fullstack Developer, Specjalista ds. Przekwalifikowania.
       </h1>
-    </main>
+      <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+        Daniel Noworyta, programista i specjalista ds. przekwalifikowania.
+        Jestem załozycielem kanału Programistafrontend na YouTube, gdzie dzielę
+        się swoją wiedzą i doświadczeniem związanym ze zmianą branzy i nauką
+        programowania.
+      </p>
+      <div className="mt-6 flex gap-6">
+        <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
+        <SocialLink
+          href="#"
+          aria-label="Follow on Instagram"
+          icon={InstagramIcon}
+        />
+        <SocialLink href="#" aria-label="Follow on GitHub" icon={GitHubIcon} />
+        <SocialLink
+          href="#"
+          aria-label="Follow on LinkedIn"
+          icon={LinkedInIcon}
+        />
+      </div>
+    </Container>
   );
 }
