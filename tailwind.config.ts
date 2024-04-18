@@ -7,17 +7,6 @@ import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColo
 
 import typographyStyles from "./typography.ts";
 
-function addVariablesForColors({ addBase, theme }: any) {
-  const allColors = flattenColorPalette(theme("colors"));
-  const newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
-  );
-
-  addBase({
-    ":root": newVars,
-  });
-}
-
 // eslint-disable-next-line import/no-default-export
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -52,3 +41,15 @@ export default {
   },
   plugins: [typographyPlugin, addVariablesForColors],
 } satisfies Config;
+
+// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+function addVariablesForColors({ addBase, theme }: any) {
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
