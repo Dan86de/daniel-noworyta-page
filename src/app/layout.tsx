@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import "@/styles/tailwind.css";
 
@@ -32,6 +33,7 @@ export default function RootLayout({
             <Layout>{children}</Layout>
           </div>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
