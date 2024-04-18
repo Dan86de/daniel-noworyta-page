@@ -1,5 +1,6 @@
 import typographyPlugin from "@tailwindcss/typography";
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 import typographyStyles from "./typography.ts";
 
@@ -8,6 +9,15 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "selector",
   theme: {
+    extend: {
+      fontFamily: {
+        sans: ["Geomanist", ...defaultTheme.fontFamily.sans],
+        mono: ["Silka Mono", ...defaultTheme.fontFamily.mono],
+      },
+      fontWeight: {
+        semibold: "500",
+      },
+    },
     fontSize: {
       xxs: ["0.625rem", { lineHeight: "1rem" }],
       xs: ["0.8125rem", { lineHeight: "1.5rem" }],

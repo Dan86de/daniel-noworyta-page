@@ -22,11 +22,20 @@ export function Newsletter() {
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">
-          Newsletter <em>Programistafrontend</em>
+          Newsletter <em>Programistafrontend</em> o tym:
         </span>
       </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
+
+      <ul className="list-disc pl-4 pt-4 text-sm text-zinc-600 dark:text-zinc-400">
+        <li>jak uczyć się programowania na własną rękę?</li>
+        <li>jak się przekwalifikować i dostać pracę w IT?</li>
+      </ul>
+      <p className="text-sm text-zinc-800 dark:text-zinc-400 pt-4">
+        Wszystko to{" "}
+        <span className="font-medium underline">
+          bez motywacyjnego bełkotu i lania wody
+        </span>
+        . Konkrety, które sam chciałem dostać na początku.
       </p>
       <div className="mt-6 flex flex-col space-y-2">
         <input
