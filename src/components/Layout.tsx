@@ -1,5 +1,8 @@
 import React from "react";
 
+import { Footer } from "@/components/Footer.tsx";
+import { Header } from "@/components/Header.tsx";
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
@@ -9,9 +12,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </div>
       <div className="relative flex w-full flex-col">
-        {/*<Header />*/}
+        <Header />
         <main className="flex-auto">{children}</main>
-        {/*<Footer />*/}
+        <Footer />
       </div>
     </>
   );

@@ -17,7 +17,7 @@ function SocialLink({
 }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-orange-600 dark:fill-zinc-400 dark:group-hover:fill-orange-300" />
     </Link>
   );
 }
@@ -35,16 +35,24 @@ export default function Home() {
         programowania.
       </p>
       <div className="mt-6 flex gap-6">
-        <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
         <SocialLink
           href="#"
-          aria-label="Follow on Instagram"
+          aria-label="Śledź mnie na platformie X"
+          icon={XIcon}
+        />
+        <SocialLink
+          href="#"
+          aria-label="Śledź mnie na Instagramie"
           icon={InstagramIcon}
         />
-        <SocialLink href="#" aria-label="Follow on GitHub" icon={GitHubIcon} />
         <SocialLink
           href="#"
-          aria-label="Follow on LinkedIn"
+          aria-label="Śledź mnie na GitHub"
+          icon={GitHubIcon}
+        />
+        <SocialLink
+          href="#"
+          aria-label="Śledź mnie na platformie LinkedIn"
           icon={LinkedInIcon}
         />
       </div>
