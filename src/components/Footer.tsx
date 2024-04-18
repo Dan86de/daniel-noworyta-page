@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React from "react";
 
 import { ContainerInner, ContainerOuter } from "@/components/Container";
 
@@ -31,7 +32,7 @@ export function Footer() {
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Daniel Noworyta. Wszelkie
-                prawa zastrzezone.
+                prawa zastrzeżone.
               </p>
             </div>
           </ContainerInner>

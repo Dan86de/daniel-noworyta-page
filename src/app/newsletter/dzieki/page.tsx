@@ -5,7 +5,7 @@ export default function NewsletterThanks() {
   return (
     <>
       <Container className="flex h-full items-center pt-16 sm:pt-32">
-        <div className="flex flex-col">
+        <div className="flex flex-col max-w-2xl">
           <h2 className="pb-4 text-2xl md:text-4xl">
             Zapisałeś się na newsletter{" "}
             <span className="font-bold">Programistafrontend</span>
@@ -30,22 +30,6 @@ export default function NewsletterThanks() {
             </li>
           </ul>
           <p className="pt-4">Witaj na pokładzie i do przeczytania wkrótce!</p>
-          {/*<div className={"ml-auto lg:w-1/2"}>*/}
-          {/*  <Image*/}
-          {/*    src={signature}*/}
-          {/*    alt="podpis"*/}
-          {/*    width={200}*/}
-          {/*    height={100}*/}
-          {/*    className="mr-4 aspect-video dark:hidden"*/}
-          {/*  />*/}
-          {/*  <Image*/}
-          {/*    src={signatureDark}*/}
-          {/*    alt="podpis"*/}
-          {/*    width={200}*/}
-          {/*    height={100}*/}
-          {/*    className="mr-4 hidden aspect-video dark:block"*/}
-          {/*  />*/}
-          {/*</div>*/}
           <Button
             href="/"
             variant="secondary"

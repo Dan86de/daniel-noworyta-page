@@ -12,6 +12,16 @@ import React, { Fragment, useEffect, useRef, useState } from "react";
 import { Container } from "@/components/Container";
 import avatarImage from "@/images/avatar.jpg";
 
+type NavItem = {
+  href: string;
+  label: string;
+};
+
+const navItems: NavItem[] = [
+  { href: "/artykuly", label: "Artykuły" },
+  { href: "/newsletter", label: "Newsletter" },
+];
+
 function CloseIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -133,7 +143,13 @@ function MobileNavigation(
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/artykuly">Artykuły</MobileNavItem>
+                {navItems.map((item) => {
+                  return (
+                    <MobileNavItem key={item.label} href={item.href}>
+                      {item.label}
+                    </MobileNavItem>
+                  );
+                })}
               </ul>
             </nav>
           </Popover.Panel>
@@ -176,7 +192,13 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<"nav">) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/artykuly">Artykuły</NavItem>
+        {navItems.map((item) => {
+          return (
+            <NavItem key={item.label} href={item.href}>
+              {item.label}
+            </NavItem>
+          );
+        })}
       </ul>
     </nav>
   );

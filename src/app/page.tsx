@@ -30,36 +30,38 @@ export default async function Home() {
   return (
     <>
       <Container className="mt-9">
-        <h1 className="text-4xl font-bold text-zinc-800 sm:text-5xl dark:text-zinc-100">
-          Fullstack Developer, Specjalista ds. Przekwalifikowania na IT.
-        </h1>
-        <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Daniel Noworyta, programista i specjalista ds. przekwalifikowania.
-          Jestem załozycielem kanału Programistafrontend na YouTube, gdzie
-          dzielę się swoją wiedzą i doświadczeniem związanym ze zmianą branży i
-          nauką programowania.
-        </p>
-        <div className="mt-6 flex gap-6">
-          <SocialLink
-            href="https://twitter.com/danielnoworyta"
-            aria-label="Śledź mnie na platformie X"
-            icon={XIcon}
-          />
-          <SocialLink
-            href="https://www.instagram.com/programistafrontend/"
-            aria-label="Śledź mnie na Instagramie"
-            icon={InstagramIcon}
-          />
-          <SocialLink
-            href="https://github.com/Dan86de"
-            aria-label="Śledź mnie na GitHub"
-            icon={GitHubIcon}
-          />
-          <SocialLink
-            href="https://www.linkedin.com/in/danielnoworyta/"
-            aria-label="Śledź mnie na platformie LinkedIn"
-            icon={LinkedInIcon}
-          />
+        <div className="max-w-2xl">
+          <h1 className="text-4xl font-bold text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            Fullstack Developer, Pokażę Ci, jak zmienić branżę na IT.
+          </h1>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            Daniel Noworyta, programista i specjalista ds. przekwalifikowania.
+            Jestem załozycielem kanału Programistafrontend na YouTube, gdzie
+            dzielę się swoją wiedzą i doświadczeniem związanym ze zmianą branży,
+            nauką programowania i rozwojem swojej kariery w IT.
+          </p>
+          <div className="mt-6 flex gap-6">
+            <SocialLink
+              href="https://twitter.com/danielnoworyta"
+              aria-label="Śledź mnie na platformie X"
+              icon={XIcon}
+            />
+            <SocialLink
+              href="https://www.instagram.com/programistafrontend/"
+              aria-label="Śledź mnie na Instagramie"
+              icon={InstagramIcon}
+            />
+            <SocialLink
+              href="https://github.com/Dan86de"
+              aria-label="Śledź mnie na GitHub"
+              icon={GitHubIcon}
+            />
+            <SocialLink
+              href="https://www.linkedin.com/in/danielnoworyta/"
+              aria-label="Śledź mnie na platformie LinkedIn"
+              icon={LinkedInIcon}
+            />
+          </div>
         </div>
       </Container>
       <Container className="mt-24 md:mt-28">
