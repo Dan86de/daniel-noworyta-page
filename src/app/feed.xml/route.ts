@@ -34,17 +34,17 @@ export async function GET(req: Request) {
   const articleIds = require
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    .context("../articles", true, /\/page\.mdx$/)
+    .context("../artykuly", true, /\/page\.mdx$/)
     .keys()
     .filter((key: string) => key.startsWith("./"))
     .map((key: string) => key.slice(2).replace(/\/page\.mdx$/, ""));
 
   for (const id of articleIds) {
-    const url = String(new URL(`/articles/${id}`, req.url));
+    const url = String(new URL(`/artykuly/${id}`, req.url));
     const html = await (await fetch(url)).text();
     const $ = cheerio.load(html);
 
-    const publicUrl = `${siteUrl}/articles/${id}`;
+    const publicUrl = `${siteUrl}/artykuly/${id}`;
     const article = $("article").first();
     const title = article.find("h1").first().text();
     const date = article.find("time").first().attr("datetime");
