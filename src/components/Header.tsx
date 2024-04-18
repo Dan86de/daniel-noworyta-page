@@ -128,7 +128,7 @@ function MobileNavigation(
                 <CloseIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
               </Popover.Button>
               <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
-                Navigation
+                Nawigacja
               </h2>
             </div>
             <nav className="mt-6">
@@ -235,7 +235,7 @@ function Avatar({
   return (
     <Link
       href="/"
-      aria-label="Home"
+      aria-label="Strona domowa"
       className={clsx(className, "pointer-events-auto")}
       {...props}
     >

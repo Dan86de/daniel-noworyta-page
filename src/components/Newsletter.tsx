@@ -37,7 +37,7 @@ export function Newsletter() {
         <div className="flex flex-col space-y-2">
           <input
             type="text"
-            placeholder="Twoje imię"
+            placeholder="Imię"
             aria-label="Twoje imię"
             name="name"
             required
