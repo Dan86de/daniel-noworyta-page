@@ -1,8 +1,22 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-assignment,@typescript-eslint/no-explicit-any,@typescript-eslint/no-unsafe-argument,@typescript-eslint/ban-ts-comment */
 import typographyPlugin from "@tailwindcss/typography";
 import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
+// @ts-ignore
+import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
 
 import typographyStyles from "./typography.ts";
+
+function addVariablesForColors({ addBase, theme }: any) {
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
 
 // eslint-disable-next-line import/no-default-export
 export default {
@@ -36,5 +50,5 @@ export default {
     },
     typography: typographyStyles,
   },
-  plugins: [typographyPlugin],
+  plugins: [typographyPlugin, addVariablesForColors],
 } satisfies Config;
