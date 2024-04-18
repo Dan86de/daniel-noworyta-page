@@ -36,22 +36,22 @@ export default function Home() {
       </p>
       <div className="mt-6 flex gap-6">
         <SocialLink
-          href="#"
+          href="https://twitter.com/danielnoworyta"
           aria-label="Śledź mnie na platformie X"
           icon={XIcon}
         />
         <SocialLink
-          href="#"
+          href="https://www.instagram.com/programistafrontend/"
           aria-label="Śledź mnie na Instagramie"
           icon={InstagramIcon}
         />
         <SocialLink
-          href="#"
+          href="https://github.com/Dan86de"
           aria-label="Śledź mnie na GitHub"
           icon={GitHubIcon}
         />
         <SocialLink
-          href="#"
+          href="https://www.linkedin.com/in/danielnoworyta/"
           aria-label="Śledź mnie na platformie LinkedIn"
           icon={LinkedInIcon}
         />
