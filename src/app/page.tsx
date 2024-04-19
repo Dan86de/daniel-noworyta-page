@@ -9,6 +9,7 @@ import {
   InstagramIcon,
   LinkedInIcon,
   XIcon,
+  YouTubeIcon,
 } from "@/components/SocialIcons.tsx";
 import { type ArticleWithSlug, getAllArticles } from "@/lib/articles.ts";
 
@@ -42,14 +43,14 @@ export default async function Home() {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com/danielnoworyta"
-              aria-label="Śledź mnie na platformie X"
-              icon={XIcon}
+              href="https://www.youtube.com/c/@danielnoworyta"
+              aria-label="Odwiedź mój kanał na YouTube"
+              icon={YouTubeIcon}
             />
             <SocialLink
-              href="https://www.instagram.com/programistafrontend/"
-              aria-label="Śledź mnie na Instagramie"
-              icon={InstagramIcon}
+              href="https://www.linkedin.com/in/danielnoworyta/"
+              aria-label="Śledź mnie na platformie LinkedIn"
+              icon={LinkedInIcon}
             />
             <SocialLink
               href="https://github.com/Dan86de"
@@ -57,9 +58,14 @@ export default async function Home() {
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://www.linkedin.com/in/danielnoworyta/"
-              aria-label="Śledź mnie na platformie LinkedIn"
-              icon={LinkedInIcon}
+              href="https://www.instagram.com/programistafrontend/"
+              aria-label="Śledź mnie na Instagramie"
+              icon={InstagramIcon}
+            />
+            <SocialLink
+              href="https://twitter.com/danielnoworyta"
+              aria-label="Śledź mnie na platformie X"
+              icon={XIcon}
             />
           </div>
         </div>
