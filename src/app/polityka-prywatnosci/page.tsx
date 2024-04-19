@@ -5,7 +5,7 @@ export default function PrivacyPolicy() {
   return (
     <Container className="mt-9">
       <Prose>
-        <h1 document-name="privacyPolicy" className="document-heading center">
+        <h1 document-name="privacyPolicy">
           Polityka prywatności Sklepu Sklep DanielNoworyta <br />
           https://danielnoworyta.pl/sklep <br />
           („Sklep”)
@@ -93,7 +93,7 @@ export default function PrivacyPolicy() {
             Twoich danych w zależności od podejmowanych przez Ciebie działań.
           </p>
           <h3>1. Złożenie zamówienia w Sklepie</h3>
-          <table className={"w-100 mx-auto mt-1 max-w-[75em]"}>
+          <table className={" mx-auto mt-1"}>
             <tbody>
               <tr>
                 <th
@@ -102,7 +102,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -116,7 +116,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -130,7 +130,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -144,7 +144,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -157,7 +157,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -173,7 +173,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -187,7 +187,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -199,7 +199,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -214,7 +214,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -233,7 +233,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -247,7 +247,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -258,7 +258,7 @@ export default function PrivacyPolicy() {
           </table>
           <br />
           <h3>2. Nawiązanie z nami kontaktu (np. w celu zadania pytania)</h3>
-          <table className={"w-100 mx-auto mt-1 max-w-[75em]"}>
+          <table className={" mx-auto mt-1"}>
             <tbody>
               <tr>
                 <th
@@ -267,7 +267,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -281,7 +281,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -295,7 +295,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -309,7 +309,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -324,7 +324,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -341,7 +341,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -355,7 +355,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -369,7 +369,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -385,7 +385,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -404,7 +404,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -418,7 +418,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -435,7 +435,7 @@ export default function PrivacyPolicy() {
             3. Ustawienia przeglądarki lub inne zbliżone działanie zezwalające
             na prowadzenie działań analitycznych
           </h3>
-          <table className={"w-100 mx-auto mt-1 max-w-[75em]"}>
+          <table className={" mx-auto mt-1"}>
             <tbody>
               <tr>
                 <th
@@ -444,7 +444,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   W jakim celu?
@@ -457,7 +457,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   analiza sposobu korzystania i poruszania się przez Ciebie po
@@ -475,7 +475,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   Na jakiej podstawie?
@@ -488,7 +488,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   nasz prawnie uzasadniony interes, polegający na przetwarzaniu
@@ -502,7 +502,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   Jak długo?
@@ -515,7 +515,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   do momentu wygaśnięcia ważności lub usunięcia przez Ciebie
@@ -529,7 +529,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   Co się stanie, jeśli nie podasz danych?
@@ -542,7 +542,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   nie uwzględnimy sposobu korzystania i poruszania się przez
@@ -556,7 +556,7 @@ export default function PrivacyPolicy() {
           <br />
           <br />
           <h3>4. Zapisanie się na newsletter</h3>
-          <table className={"w-100 mx-auto mt-1 max-w-[75em]"}>
+          <table className={" mx-auto mt-1"}>
             <tbody>
               <tr>
                 <th
@@ -565,7 +565,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -579,7 +579,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -591,7 +591,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -610,7 +610,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -624,7 +624,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -637,7 +637,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -652,7 +652,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -666,7 +666,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -678,7 +678,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                     width: "50%",
                   }}
                 >
@@ -693,7 +693,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -712,7 +712,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -726,7 +726,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   colSpan={2}
                 >
@@ -741,7 +741,7 @@ export default function PrivacyPolicy() {
             5. Podjęcie działania lub zaniechanie mogące powodować powstanie
             roszczeń związanych ze Sklepem lub naszymi usługami
           </h3>
-          <table className={"w-100 mx-auto mt-1 max-w-[75em]"}>
+          <table className={" mx-auto mt-1"}>
             <tbody>
               <tr>
                 <th
@@ -750,7 +750,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   W jakim celu?
@@ -763,7 +763,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   ustalenie, dochodzenie lub obrona ewentualnych roszczeń,
@@ -777,7 +777,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   Na jakiej podstawie?
@@ -790,7 +790,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   nasz prawnie uzasadniony interes, polegający na przetwarzaniu
@@ -805,7 +805,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   Jak długo?
@@ -818,7 +818,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   do upływu okresu przedawnienia roszczeń lub do momentu, w
@@ -832,7 +832,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   Co się stanie, jeśli nie podasz danych?
@@ -845,7 +845,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   brak możliwości ustalenia, dochodzenia lub obrony roszczeń
@@ -979,7 +979,7 @@ export default function PrivacyPolicy() {
             polecenie.{" "}
           </p>
           <p>Poniżej znajdziesz listę odbiorców Twoich danych: </p>
-          <table className={"w-100 mx-auto mt-1 max-w-[75em]"}>
+          <table className={" mx-auto mt-1"}>
             <tbody>
               <tr>
                 <th
@@ -988,7 +988,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   DZIAŁANIE{" "}
@@ -999,7 +999,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   ODBIORCY DANYCH{" "}
@@ -1010,7 +1010,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   PRZEKAZANIE DANYCH POZA UNIĘ EUROPEJSKĄ{" "}
@@ -1023,7 +1023,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   rowSpan={1}
                 >
@@ -1035,7 +1035,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   dostawca oprogramowania do prowadzenia sprzedaży{" "}
@@ -1046,7 +1046,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   nie ma miejsca{" "}
@@ -1059,7 +1059,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   rowSpan={4}
                 >
@@ -1071,7 +1071,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   dostawca płatności{" "}
@@ -1082,7 +1082,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   nie ma miejsca{" "}
@@ -1095,7 +1095,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   dostawca oprogramowania ułatwiającego prowadzenie działalności
@@ -1107,7 +1107,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   nie ma miejsca{" "}
@@ -1120,7 +1120,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   dostawca standardowego oprogramowania biurowego (w tym
@@ -1132,7 +1132,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   nie ma miejsca{" "}
@@ -1145,7 +1145,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   biuro rachunkowe{" "}
@@ -1156,7 +1156,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   nie ma miejsca{" "}
@@ -1169,7 +1169,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   rowSpan={1}
                 >
@@ -1182,7 +1182,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   podmiot zapewniający wysyłkę newslettera lub wiadomości
@@ -1194,7 +1194,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   nie ma miejsca{" "}
@@ -1207,7 +1207,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#eee",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                   rowSpan={1}
                 >
@@ -1219,7 +1219,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   dostawca standardowego oprogramowania biurowego (w tym
@@ -1231,7 +1231,7 @@ export default function PrivacyPolicy() {
                     backgroundColor: "#fff",
                     textAlign: "center",
                     border: "1px solid #000",
-                    padding: "0.5em 1em",
+                    padding: "0.5em 0.5em",
                   }}
                 >
                   nie ma miejsca{" "}
