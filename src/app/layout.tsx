@@ -29,7 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl" className="h-full antialiased" suppressHydrationWarning>
+    <html
+      lang="pl"
+      className="h-full antialiased overflow-y-scroll"
+      suppressHydrationWarning
+    >
       <GoogleTagManager gtmId="GTM-KT7MFCQQ" />
       <body className="flex h-full bg-zinc-50 dark:bg-zinc-950">
         <Providers>
