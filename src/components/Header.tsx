@@ -12,7 +12,10 @@ import React, { Fragment, useEffect, useRef, useState } from "react";
 import { Container } from "@/components/Container";
 import avatarImage from "@/images/avatar.jpg";
 
-type NavItem = {
+/**
+ * Type for navigation item.
+ */
+export type NavItem = {
   href: string;
   label: string;
 };
@@ -20,6 +23,7 @@ type NavItem = {
 const navItems: NavItem[] = [
   { href: "/artykuly", label: "Artykuły" },
   { href: "/newsletter", label: "Newsletter" },
+  { href: "/sprzet", label: "Sprzęt" },
 ];
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<"svg">) {
@@ -145,7 +149,7 @@ function MobileNavigation(
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 {navItems.map((item) => {
                   return (
-                    <MobileNavItem key={item.label} href={item.href}>
+                    <MobileNavItem key={item.href} href={item.href}>
                       {item.label}
                     </MobileNavItem>
                   );
@@ -194,7 +198,7 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<"nav">) {
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         {navItems.map((item) => {
           return (
-            <NavItem key={item.label} href={item.href}>
+            <NavItem key={item.href} href={item.href}>
               {item.label}
             </NavItem>
           );

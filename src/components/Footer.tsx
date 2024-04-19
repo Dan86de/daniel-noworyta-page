@@ -2,6 +2,13 @@ import Link from "next/link";
 import React from "react";
 
 import { ContainerInner, ContainerOuter } from "@/components/Container";
+import { type NavItem } from "@/components/Header.tsx";
+
+const navItems: NavItem[] = [
+  { href: "/artykuly", label: "Artykuły" },
+  { href: "/newsletter", label: "Newsletter" },
+  { href: "/sprzet", label: "Sprzęt" },
+];
 
 function NavLink({
   href,
@@ -28,7 +35,11 @@ export function Footer() {
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                <NavLink href="/artykuly">Artykuły</NavLink>
+                {navItems.map((item) => (
+                  <NavLink key={item.href} href={item.href}>
+                    {item.label}
+                  </NavLink>
+                ))}
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Daniel Noworyta. Wszelkie

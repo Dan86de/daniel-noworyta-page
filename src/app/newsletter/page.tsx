@@ -71,7 +71,8 @@ export default function NewsletterPromo() {
             mówi Ci, że jest to łatwy proces. Dobrze radzę przestań słuchać.
           </p>
           <p>
-            Założyłem ten newsletter, by Ci pomóc. Chcesz zmienić branżę ?
+            Założyłem ten newsletter, by Ci pomóc. <br />
+            Chcesz zmienić branżę ?<br />
             Chcesz zostać programistą i pracować w branży IT ?
           </p>
           <p>
