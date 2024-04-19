@@ -6,8 +6,9 @@ export default function PrivacyPolicy() {
     <Container className="mt-9">
       <Prose>
         <h1 document-name="privacyPolicy">
-          Polityka prywatności Sklepu Sklep DanielNoworyta <br />
-          https://danielnoworyta.pl/sklep <br />
+          Polityka prywatności Strony
+          <br />
+          https://danielnoworyta.pl <br />
           („Sklep”)
         </h1>
         <section>
@@ -97,13 +98,9 @@ export default function PrivacyPolicy() {
             <tbody>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   colSpan={2}
                 >
                   W jakim celu?
@@ -111,13 +108,16 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
+                  // style={{
+                  //   color: "#000",
+                  //   backgroundColor: "#fff",
+                  //   textAlign: "center",
+                  //   border: "1px solid #000",
+                  //   padding: "0.5em 0.5em",
+                  // }}
                   colSpan={2}
                 >
                   realizacja Twojego zamówienia
@@ -125,13 +125,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   colSpan={2}
                 >
                   Na jakiej podstawie?
@@ -139,27 +135,17 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   umowa sprzedaży lub umowa o dostarczenie treści cyfrowych
                   (art. 6 ust. 1 lit. b RODO)
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   obowiązek prawny, związany z rachunkowością, zobowiązujący nas
                   do przetwarzania Twoich danych osobowych (art. 6 ust. 1 lit. c
@@ -168,13 +154,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   colSpan={2}
                 >
                   Jak długo?
@@ -182,26 +164,16 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   przez okres obowiązywania wyżej wymienionej umowy
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   do momentu wygaśnięcia ciążącego na nas obowiązku prawnego,
                   związanego z rachunkowością
@@ -209,13 +181,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                   colSpan={2}
                 >
                   ponadto, Twoje dane będą przetwarzane do upływu okresu, w
@@ -228,13 +196,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   colSpan={2}
                 >
                   Co się stanie, jeśli nie podasz danych?
@@ -242,13 +206,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                   colSpan={2}
                 >
                   nie będziesz mieć możliwości złożenia zamówienia
@@ -262,13 +222,9 @@ export default function PrivacyPolicy() {
             <tbody>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   colSpan={2}
                 >
                   W jakim celu?
@@ -276,13 +232,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                   colSpan={2}
                 >
                   obsługa Twoich zapytań lub zgłoszeń
@@ -290,13 +242,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   colSpan={2}
                 >
                   Na jakiej podstawie?
@@ -304,14 +252,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   umowa lub działania podejmowane na Twoje żądanie, zmierzające
                   do jej zawarcia (art. 6 ust. 1 lit. b RODO) – w przypadku gdy
@@ -319,14 +262,9 @@ export default function PrivacyPolicy() {
                   lub możemy być stroną
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   nasz prawnie uzasadniony interes, polegający na przetwarzaniu
                   Twoich danych w celu prowadzenia z Tobą komunikacji (art. 6
@@ -336,13 +274,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   colSpan={2}
                 >
                   Jak długo?
@@ -350,28 +284,18 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   przez czas trwania wiążącej nas umowy lub – jeśli umowa nie
                   zostanie zawarta - do upływu okresu dochodzenia roszczeń –
                   zobacz ostatnią tabelę tej sekcji*
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   do upływu okresu dochodzenia roszczeń – zobacz ostatnią tabelę
                   tej sekcji - lub do momentu, w którym uwzględnimy Twój
@@ -380,13 +304,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                   colSpan={2}
                 >
                   ponadto, Twoje dane będą przetwarzane do upływu okresu, w
@@ -399,13 +319,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   colSpan={2}
                 >
                   Co się stanie, jeśli nie podasz danych?
@@ -413,13 +329,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                   colSpan={2}
                 >
                   nie będziemy mieli możliwości udzielenia odpowiedzi na Twoje
@@ -439,26 +351,18 @@ export default function PrivacyPolicy() {
             <tbody>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                 >
                   W jakim celu?
                 </th>
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   analiza sposobu korzystania i poruszania się przez Ciebie po
                   stronie internetowej Sklepu, celem polepszenia jej
@@ -470,26 +374,18 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                 >
                   Na jakiej podstawie?
                 </th>
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   nasz prawnie uzasadniony interes, polegający na przetwarzaniu
                   danych w podanym wyżej celu (art. 6 ust. 1 lit. f RODO)
@@ -497,26 +393,18 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                 >
                   Jak długo?
                 </th>
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   do momentu wygaśnięcia ważności lub usunięcia przez Ciebie
                   plików cookies, wykorzystywanych do celów analitycznych*
@@ -524,26 +412,18 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                 >
                   Co się stanie, jeśli nie podasz danych?
                 </th>
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   nie uwzględnimy sposobu korzystania i poruszania się przez
                   Ciebie po stronie internetowej Sklepu w pracach nad jej
@@ -560,13 +440,9 @@ export default function PrivacyPolicy() {
             <tbody>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   colSpan={2}
                 >
                   W jakim celu?
@@ -574,26 +450,16 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   wysyłanie newslettera
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   analiza efektywności wysłanych przez nas treści, celem
                   ustalenia ogólnych zasad dotyczących skutecznej wysyłki
@@ -605,13 +471,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   colSpan={2}
                 >
                   Na jakiej podstawie?
@@ -619,27 +481,17 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   umowa o świadczenie usługi wysyłki newslettera (art. 6 ust. 1
                   lit. b RODO)
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   nasz prawnie uzasadniony interes, polegający na przetwarzaniu
                   danych w podanym wyżej celu (art. 6 ust. 1 lit. f RODO)
@@ -647,13 +499,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   colSpan={2}
                 >
                   Jak długo?
@@ -661,26 +509,16 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   do momentu, w którym wypiszesz się z naszego newslettera
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                    width: "50%",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   do momentu, w którym uwzględnimy Twój sprzeciw wobec
                   przetwarzania
@@ -688,13 +526,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                   colSpan={2}
                 >
                   ponadto, Twoje dane będą przetwarzane do upływu okresu, w
@@ -707,13 +541,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   colSpan={2}
                 >
                   Co się stanie, jeśli nie podasz danych?
@@ -721,13 +551,9 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                   colSpan={2}
                 >
                   nie będziesz mieć możliwości otrzymywania informacji
@@ -745,26 +571,18 @@ export default function PrivacyPolicy() {
             <tbody>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                 >
                   W jakim celu?
                 </th>
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   ustalenie, dochodzenie lub obrona ewentualnych roszczeń,
                   związanych z zawartą umową lub świadczonymi usługami
@@ -772,26 +590,18 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                 >
                   Na jakiej podstawie?
                 </th>
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   nasz prawnie uzasadniony interes, polegający na przetwarzaniu
                   danych osobowych we wskazanym powyżej celu (art. 6 ust. 1 lit.
@@ -800,26 +610,18 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                 >
                   Jak długo?
                 </th>
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   do upływu okresu przedawnienia roszczeń lub do momentu, w
                   którym uwzględnimy Twój sprzeciw wobec przetwarzania*
@@ -827,26 +629,18 @@ export default function PrivacyPolicy() {
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                 >
                   Co się stanie, jeśli nie podasz danych?
                 </th>
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   brak możliwości ustalenia, dochodzenia lub obrony roszczeń
                 </td>
@@ -983,256 +777,172 @@ export default function PrivacyPolicy() {
             <tbody>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                 >
                   DZIAŁANIE{" "}
                 </th>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                 >
                   ODBIORCY DANYCH{" "}
                 </th>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                 >
                   PRZEKAZANIE DANYCH POZA UNIĘ EUROPEJSKĄ{" "}
                 </th>
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   rowSpan={1}
                 >
                   każde działanie w związku ze Sklepem{" "}
                 </th>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   dostawca oprogramowania do prowadzenia sprzedaży{" "}
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   nie ma miejsca{" "}
                 </td>
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   rowSpan={4}
                 >
                   złożenie zamówienia w Sklepie{" "}
                 </th>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   dostawca płatności{" "}
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   nie ma miejsca{" "}
                 </td>
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   dostawca oprogramowania ułatwiającego prowadzenie działalności
                   (np. oprogramowanie księgowe){" "}
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   nie ma miejsca{" "}
                 </td>
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   dostawca standardowego oprogramowania biurowego (w tym
                   skrzynki poczty elektronicznej){" "}
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   nie ma miejsca{" "}
                 </td>
               </tr>
               <tr>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   biuro rachunkowe{" "}
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   nie ma miejsca{" "}
                 </td>
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   rowSpan={1}
                 >
                   zapis na newsletter lub wyrażenie zgody na przesyłanie
                   wiadomości marketingowych{" "}
                 </th>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   podmiot zapewniający wysyłkę newslettera lub wiadomości
                   marketingowych{" "}
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   nie ma miejsca{" "}
                 </td>
               </tr>
               <tr>
                 <th
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#eee",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-200 dark:bg-zinc-800"
+                  }
                   rowSpan={1}
                 >
                   nawiązanie z nami kontaktu (np. zadanie pytania){" "}
                 </th>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   dostawca standardowego oprogramowania biurowego (w tym
                   skrzynki poczty elektronicznej){" "}
                 </td>
                 <td
-                  style={{
-                    color: "#000",
-                    backgroundColor: "#fff",
-                    textAlign: "center",
-                    border: "1px solid #000",
-                    padding: "0.5em 0.5em",
-                  }}
+                  className={
+                    "text-center border border-black p-2 text-zinc-800 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-600"
+                  }
                 >
                   nie ma miejsca{" "}
                 </td>
