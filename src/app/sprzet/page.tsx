@@ -175,7 +175,7 @@ export default function Uses() {
             </Tool>
           </ToolsSection>
         </div>
-        <p className="text-right mt-6 text-base font-thin text-zinc-600 dark:text-zinc-400">
+        <p className="text-right mt-6 text-xs font-sans text-zinc-400 dark:text-zinc-700">
           {content}
         </p>
       </SimpleLayout>
