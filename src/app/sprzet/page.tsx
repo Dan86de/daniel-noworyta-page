@@ -45,9 +45,9 @@ export const metadata = {
 };
 
 export default function Uses() {
-  const {
-    publicRuntimeConfig,
-  }: { publicRuntimeConfig: { modifiedDate: string } } = getConfig();
+  const { publicRuntimeConfig } = getConfig() as unknown as {
+    publicRuntimeConfig: { modifiedDate: string };
+  };
 
   const date = new Date(publicRuntimeConfig.modifiedDate);
 
