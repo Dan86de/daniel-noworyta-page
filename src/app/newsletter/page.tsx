@@ -1,8 +1,17 @@
 import Image from "next/image";
+import React from "react";
 
 import { Container } from "@/components/Container.tsx";
 import { NewsletterPageForm } from "@/components/NewsletterPageForm.tsx";
 import { Prose } from "@/components/Prose.tsx";
+import {
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  XIcon,
+  YouTubeIcon,
+} from "@/components/SocialIcons.tsx";
+import { SocialLink } from "@/components/SocialLink.tsx";
 import portraitImage from "@/images/avatar.jpg";
 import signature from "@/images/signature.webp";
 import signatureDark from "@/images/signature_dark_white.webp";
@@ -111,6 +120,33 @@ export default function NewsletterPromo() {
                   alt=""
                   sizes="(min-width: 1024px) 32rem, 20rem"
                   className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                />
+              </div>
+              <div className="mt-6 flex gap-6 justify-center">
+                <SocialLink
+                  href="https://www.youtube.com/c/@danielnoworyta"
+                  aria-label="Odwiedź mój kanał na YouTube"
+                  icon={YouTubeIcon}
+                />
+                <SocialLink
+                  href="https://www.linkedin.com/in/danielnoworyta/"
+                  aria-label="Śledź mnie na platformie LinkedIn"
+                  icon={LinkedInIcon}
+                />
+                <SocialLink
+                  href="https://github.com/Dan86de"
+                  aria-label="Śledź mnie na GitHub"
+                  icon={GitHubIcon}
+                />
+                <SocialLink
+                  href="https://www.instagram.com/programistafrontend/"
+                  aria-label="Śledź mnie na Instagramie"
+                  icon={InstagramIcon}
+                />
+                <SocialLink
+                  href="https://twitter.com/danielnoworyta"
+                  aria-label="Śledź mnie na platformie X"
+                  icon={XIcon}
                 />
               </div>
             </div>

@@ -11,20 +11,8 @@ import {
   XIcon,
   YouTubeIcon,
 } from "@/components/SocialIcons.tsx";
+import { SocialLink } from "@/components/SocialLink.tsx";
 import { type ArticleWithSlug, getAllArticles } from "@/lib/articles.ts";
-
-function SocialLink({
-  icon: Icon,
-  ...props
-}: React.ComponentPropsWithoutRef<typeof Link> & {
-  icon: React.ComponentType<{ className?: string }>;
-}) {
-  return (
-    <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-orange-600 dark:fill-zinc-400 dark:group-hover:fill-orange-300" />
-    </Link>
-  );
-}
 
 export default async function Home() {
   const articles: ArticleWithSlug[] = (await getAllArticles()).slice(0, 4);
@@ -37,9 +25,16 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Daniel Noworyta, programista i specjalista ds. przekwalifikowania.
-            Jestem załozycielem kanału Programistafrontend na YouTube, gdzie
-            dzielę się swoją wiedzą i doświadczeniem związanym ze zmianą branży,
-            nauką programowania i rozwojem swojej kariery w IT.
+            Jestem załozycielem kanału{" "}
+            <Link
+              className="text-orange-500 underline"
+              href={"https://youtube.com/c/@danielnoworyta"}
+              target={"_blank"}
+            >
+              Programistafrontend na YouTube
+            </Link>
+            , gdzie dzielę się swoją wiedzą i doświadczeniem związanym ze zmianą
+            branży, nauką programowania i rozwojem swojej kariery w IT.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
