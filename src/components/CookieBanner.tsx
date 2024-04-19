@@ -24,16 +24,11 @@ export function Banner() {
     setConsentGiven("yes");
   };
 
-  const handleDeclineCookies = () => {
-    localStorage.setItem("cookie_consent", "no");
-    setConsentGiven("no");
-  };
-
   return (
     <>
       {consentGiven === "undecided" && (
-        <div className="pointer-events-none fixed p-6 inset-x-0 bottom-0 ">
-          <Card className="pointer-events-auto max-w-xl border rounded-xl border-zinc-300 p-6 dark:border-zinc-700/70 text-zinc-900 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-950">
+        <div className="fixed inset-x-0 bottom-0 flex justify-center gap-x-8 gap-y-4 border border-zinc-300 p-6 dark:border-zinc-700/70 text-zinc-900 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-950 md:flex-row md:items-center ">
+          <Card className="pointer-events-auto ">
             <div className="flex gap-4 items-center">
               <Card.Title>
                 Korzystając z danielnoworyta.pl zgadzasz się z{" "}
@@ -45,7 +40,6 @@ export function Banner() {
                 </Link>
               </Card.Title>
               <Button onClick={handleAcceptCookies}>{"OK"}</Button>
-              <Button onClick={handleDeclineCookies}>{"NIE!"}</Button>
             </div>
           </Card>
         </div>
