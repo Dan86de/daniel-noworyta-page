@@ -1,3 +1,4 @@
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
@@ -28,6 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className="h-full antialiased" suppressHydrationWarning>
+      <GoogleTagManager gtmId="GTM-NZ82HSSK" />
       <body className="flex h-full bg-zinc-50 dark:bg-zinc-950">
         <Providers>
           <div className="flex w-full">
