@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className="h-full antialiased" suppressHydrationWarning>
-      <GoogleTagManager gtmId="GTM-NZ82HSSK" />
+      <GoogleTagManager gtmId="GTM-KT7MFCQQ" />
       <body className="flex h-full bg-zinc-50 dark:bg-zinc-950">
         <Providers>
           <div className="flex w-full">
