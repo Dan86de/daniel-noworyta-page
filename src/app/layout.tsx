@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import "@/styles/tailwind.css";
 
 import { Providers } from "@/app/providers.tsx";
+import { Banner } from "@/components/CookieBanner.tsx";
 import { Layout } from "@/components/Layout.tsx";
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function RootLayout({
           <div className="flex w-full">
             <Layout>{children}</Layout>
           </div>
+          <Banner />
         </Providers>
         <Analytics />
         <SpeedInsights />
