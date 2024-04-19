@@ -22,68 +22,79 @@ export default function NewsletterPromo() {
       <div className="grid grid-cols-1 gap-y-2 gap-x-4 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12 ">
         <Prose>
           <h2 className="flex text-md items-center font-semibold text-zinc-900 dark:text-zinc-100 mt-12">
-            Cześć
+            Hej!
           </h2>
           <ul>
             <li>Pracujesz na etacie, ale chcesz zmienić branżę?</li>
             <li>Marzysz o zostaniu programistą i pracy w branży IT ?</li>
-            <li>Myślisz, że to nieosiągalne?</li>
+            <li>Myślisz, że zmiana branży jest nieosiągalnym wyzwaniem?</li>
           </ul>
           <p>
-            Wiem co czujesz. Też tak miałem. Przez większość mojego życia
-            odsuwałem od siebie marzenie o byciu programistą i robieniu tego co
-            kocham. W 2020 roku zmieniłem branżę i zostałem programistą
-            frontend.
+            Wiem co czujesz. <br />
+            Też tak miałem.
           </p>
           <p>
-            Chcesz wiedzieć jak tego dokonałem? Jak udało mi się zmienić branżę,
-            pomimo pracy na etacie i obowiązków rodzinnych?
+            Przez większość mojego życia odsuwałem od siebie marzenie o byciu
+            programistą i robieniu tego co kocham. W 2020 roku spełniłem
+            marzenie i zostałem programistą. W newsletterze pokazuję, jak to
+            zrobiłem pomimo pracy na etacie i obowiązków rodzinnych.
           </p>
+
           <h2 className="flex text-md items-center font-semibold text-zinc-900 dark:text-zinc-100 mt-12">
             Dlaczego powinieneś się zapisać?
           </h2>
           <ul>
-            <li>
-              co tydzień dostaniesz mięsisty email o tym jak zostać programistą
-            </li>
             <li>pokażę Ci jak uczyłem się programowania na własną rękę</li>
             <li>
-              pokażę Ci jak zmienić branżę tak, by nie ucierpiały Twoje finanse
+              co tydzień dostaniesz mięsisty email o tym, jak zostać programistą
             </li>
             <li>
               pokażę Ci jak zmienić branżę tak, by nie ucierpiały Twoje finanse
+              i relacje z bliskimi
             </li>
           </ul>
           <p>
             Wszystko to bez motywacyjnego bełkotu i lania wody. Konkrety, które
-            sam chciałem dostać na początku.
+            sam chciałem dostać na początku. Konkrety o których nikt inny Ci nie
+            powie.
           </p>
           <h2 className="flex text-md items-center font-semibold text-zinc-900 dark:text-zinc-100 mt-12">
             Dlaczego możesz mi zaufac?
           </h2>
           <p>
-            Przez 10 lat byłem inżynierem w branży samochodowej. Projektowałem
-            samochody i pracowałem dla takich marek jak Volkswagen, Porsche czy
-            Volvo. Jednak coś ciągle mówiło mi, że to nie jest to.
+            Przez 10 lat byłem inżynierem w branży samochodowej. Za pomocą
+            programu ICEMSurf tworzyłem powierzchnie klasy A dla największych
+            marek samochodowych. Pracowałem dla takich marek jak Volkswagen,
+            Porsche czy Volvo. Jednak coś ciągle mówiło mi, że to nie jest to.
           </p>
           <p>
-            Z bagażem doświadczeń, rodziną i 30 na karku postanowiłem coś
-            zmienić. Postanowiłem, że zostanę frontend web developerem. Zacząłem
-            wstawać codziennie o 5 rano, by uczyć się programowania na własną
-            rękę.
+            Z bagażem życiowych doświadczeń, rodziną i 30 na karku postanowiłem
+            coś zmienić.
+            <strong>
+              {" "}
+              Postanowiłem, że zostanę frontend web developerem. Zacząłem
+              wstawać codziennie o 5 rano, by uczyć się programowania na własną
+              rękę.
+            </strong>
           </p>
           <p>
             I tak mijały dni i lata . . . Po prawie 3 latach pełnych silnej woli
-            i pragnienia udało się. W dniu 1.12.2020 zacząłem pracę jako
-            programistafrontend w jednej z największych Niemieckich firm z
-            branży informatycznej. Czy było łatwo ? Pewnie, że nie ! Jeżeli ktoś
-            mówi Ci, że jest to łatwy proces. Dobrze radzę przestań słuchać.
+            i pragnienia udało się.{" "}
+            <strong>
+              W dniu 1.12.2020 zacząłem pracę jako programistafrontend w jednej
+              z największych Niemieckich firm z branży informatycznej.
+            </strong>{" "}
           </p>
           <p>
-            Założyłem ten newsletter, by Ci pomóc. <br />
-            Chcesz zmienić branżę ?<br />
-            Chcesz zostać programistą i pracować w branży IT ?
+            Czy było łatwo ? Pewnie, że nie ! Jeżeli ktoś mówi Ci, że jest to
+            łatwy proces. Dobrze radzę przestań słuchać.
           </p>
+          <strong>
+            Chcesz zmienić branżę ?<br />
+            Chcesz zostać programistą ?<br /> Założyłem ten newsletter, by Ci
+            pomóc.
+            <br />
+          </strong>
           <p>
             Świetnie ! Muszę jednak coś zaznaczyć. To nie będzie łatwa podróż.
             Koniec, końców wszystko rozbija się o to jak bardzo tego pragniesz.
