@@ -20,6 +20,17 @@ export default {
       fontWeight: {
         semibold: "500",
       },
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
     },
     fontSize: {
       xxs: ["0.625rem", { lineHeight: "1rem" }],

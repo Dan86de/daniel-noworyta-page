@@ -12,6 +12,7 @@ import {
   YouTubeIcon,
 } from "@/components/SocialIcons.tsx";
 import { SocialLink } from "@/components/SocialLink.tsx";
+import { YouTubeComments } from "@/components/YouTubeComments.tsx";
 import { type ArticleWithSlug, getAllArticles } from "@/lib/articles.ts";
 
 export default async function Home() {
@@ -65,6 +66,12 @@ export default async function Home() {
           </div>
         </div>
       </Container>
+      <Container className="sm:px-8 mt-24 md:mt-28">
+        <h1 className="text-xl font-bold text-zinc-800 sm:text-2xl dark:text-zinc-100">
+          Co o moich materiałach sądzą inni?
+        </h1>
+        <YouTubeComments />
+      </Container>
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16 row-start-2 lg:row-start-1">
@@ -74,7 +81,6 @@ export default async function Home() {
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />
-            {/*<Resume />*/}
           </div>
         </div>
       </Container>
