@@ -96,40 +96,12 @@ export const InfiniteMovingCards = ({
             <Card.Description>{item.quote}</Card.Description>
             <div className="flex items-end grow justify-end">
               <Card.Cta>
-                <span className="text-sm leading-[1.6] text-gray-400 font-normal">
+                <span className="text-sm leading-[1.6] text-gray-400 font-normal text-orange-500">
                   Oglądaj materiał
                 </span>
               </Card.Cta>
             </div>
           </Card>
-          // <li
-          //   className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-zinc-700 px-8 py-6 md:w-[450px]"
-          //   style={{
-          //     background:
-          //       "linear-gradient(180deg, var(--zinc-800), var(--zinc-900)",
-          //   }}
-          //   key={item.name}
-          // >
-          //   <blockquote>
-          //     <div
-          //       aria-hidden="true"
-          //       className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-          //     ></div>
-          //     <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-          //       {item.quote}
-          //     </span>
-          //     <div className="relative z-20 mt-6 flex flex-row items-center">
-          //       <span className="flex flex-col gap-1">
-          //         <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-          //           {item.name}
-          //         </span>
-          //         <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-          //           {item.title}
-          //         </span>
-          //       </span>
-          //     </div>
-          //   </blockquote>
-          // </li>
         ))}
       </ul>
     </div>
