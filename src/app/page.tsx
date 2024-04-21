@@ -25,8 +25,7 @@ export default async function Home() {
             Pokażę Ci, jak zmienić branżę na IT.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Daniel Noworyta, programista i specjalista ds. przekwalifikowania.
-            Jestem załozycielem kanału{" "}
+            Daniel Noworyta, programista samouk. Jestem założycielem kanału{" "}
             <Link
               className="text-orange-500 underline"
               href={"https://youtube.com/c/@danielnoworyta"}
@@ -34,8 +33,8 @@ export default async function Home() {
             >
               Programistafrontend na YouTube
             </Link>
-            , gdzie dzielę się swoją wiedzą i doświadczeniem związanym ze zmianą
-            branży, nauką programowania i rozwojem swojej kariery w IT.
+            , gdzie dzielę się swoją wiedzą i doświadczeniem związanym z nauką
+            programowania, zmianą branży i rozwojem swojej kariery w IT.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

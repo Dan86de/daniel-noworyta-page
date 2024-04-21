@@ -7,11 +7,7 @@ import { InfiniteMovingCards } from "@/components/InfiniteMovingCards.tsx";
 export function YouTubeComments() {
   return (
     <div className="rounded-md flex flex-col antialiased bg-transparent dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
+      <InfiniteMovingCards items={testimonials} direction="left" speed="slow" />
     </div>
   );
 }
