@@ -21,8 +21,16 @@ export function Newsletter() {
     >
       <h2 className="flex text-md items-center font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6" />
-        <span className="ml-3 pt-0.5">Newsletter Programistafrontend</span>
+        <span className="ml-3 pt-0.5">Newsletter, a w nim co tydzień:</span>
       </h2>
+      <ul className="list-disc pl-4 py-4 text-sm text-zinc-600 dark:text-zinc-400">
+        <li>ciekawe materiały do nauki</li>
+        <li>konkret, który pomoże Ci w nauce programowania</li>
+        <li>konkret, który pomoże Ci w szukaniu pierwszej pracy</li>
+      </ul>
+      <p className="text-sm text-zinc-800 dark:text-zinc-400">
+        Konkrety, których mi brakowało na początku mojej nauki.
+      </p>
 
       <div className="mt-4 flex flex-col space-y-4">
         <div className="flex flex-col space-y-2">
@@ -45,16 +53,16 @@ export function Newsletter() {
         </div>
         <Button type="submit">{"Dołącz >>"}</Button>
       </div>
-      {/*<p className="pt-4 text-xxs">*/}
-      {/*  „Zapisując się do newslettera, wyrażasz zgodę na otrzymywanie informacji*/}
-      {/*  o nowościach, promocjach, produktach i usługach programistafrontend.pl.*/}
-      {/*  Administratorem Twoich danych osobowych będzie{" "}*/}
-      {/*  <strong className={"font-semibold"}>*/}
-      {/*    Daniel Noworyta z siedzibą w Bytom 41907, Polska*/}
-      {/*  </strong>*/}
-      {/*  . Twoje dane będą przetwarzane do celów związanych z wysyłką*/}
-      {/*  newslettera”*/}
-      {/*</p>*/}
+      <p className="pt-4 text-xxs">
+        „Zapisując się do newslettera, wyrażasz zgodę na otrzymywanie informacji
+        o nowościach, promocjach, produktach i usługach programistafrontend.pl.
+        Administratorem Twoich danych osobowych będzie{" "}
+        <strong className={"font-semibold"}>
+          Daniel Noworyta z siedzibą w Bytom 41907, Polska
+        </strong>
+        . Twoje dane będą przetwarzane do celów związanych z wysyłką
+        newslettera”
+      </p>
     </form>
   );
 }

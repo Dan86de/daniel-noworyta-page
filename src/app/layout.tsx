@@ -12,10 +12,10 @@ export const metadata: Metadata = {
   title: {
     template: "%s - Daniel Noworyta",
     default:
-      "Daniel Noworyta - Fullstack Developer, Specjalista ds. Przekwalifikowania",
+      "Daniel Noworyta - Pomagam od zera nauczyć się programowania i zdobyć pracę w IT.",
   },
   description:
-    "Daniel Noworyta, programista i specjalista ds. przekwalifikowania. Jestem załozycielem kanału Programistafrontend na YouTube, gdzie dzielę się swoją wiedzą i doświadczeniem związanym z programowaniem.",
+    "Daniel Noworyta, programista samouk. Jestem założycielem kanału Programistafrontend na YouTube, gdzie dzielę się swoją wiedzą i doświadczeniem związanym z nauką programowania, zmianą branży i rozwojem swojej kariery w IT.",
   alternates: {
     types: {
       "application/rss+xml": `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
