@@ -68,7 +68,7 @@ export default async function Home() {
       </Container>
       <Container className="sm:px-8 mt-24 md:mt-28">
         <h1 className="text-xl font-bold text-zinc-800 sm:text-2xl dark:text-zinc-100">
-          Co o moich materiałach sądzą inni?
+          Co o moich materiałach sądzą widzowie?
         </h1>
         <YouTubeComments />
       </Container>
