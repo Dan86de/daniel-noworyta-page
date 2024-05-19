@@ -1,11 +1,12 @@
 "use client";
+
 import { useSearchParams } from "next/navigation";
 import { useFormState } from "react-dom";
 
 import { AcceptIsPublicReview } from "@/components/AcceptIsPublicReview.tsx";
 import { Button } from "@/components/Button.tsx";
+import { addReview } from "@/components/ConsultationReviewForm/actions.ts";
 import { CustomUserImageInputField } from "@/components/UploadImageInputField.tsx";
-import { addReview } from "@/service/notion.ts";
 
 export enum Product {
   CONSULTATION = "Consultation",
