@@ -12,20 +12,15 @@ export const addSubscriberToForm = async (formData: FormData) => {
     throw new Error("There is missing key in env.");
   }
 
-  const result = await fetch(
-    `${baseUrl}forms/${formId}/subscribe?api_secret=${secret}`,
-    {
-      method: "POST",
-      headers: new Headers({
-        "Content-Type": "application/json; charset=utf-8",
-      }),
-      body: JSON.stringify({
-        api_secret: secret,
-        email,
-        first_name,
-      }),
-    },
-  );
-
-  await result.json().then((res) => console.log(res));
+  return fetch(`${baseUrl}forms/${formId}/subscribe?api_secret=${secret}`, {
+    method: "POST",
+    headers: new Headers({
+      "Content-Type": "application/json; charset=utf-8",
+    }),
+    body: JSON.stringify({
+      api_secret: secret,
+      email,
+      first_name,
+    }),
+  });
 };

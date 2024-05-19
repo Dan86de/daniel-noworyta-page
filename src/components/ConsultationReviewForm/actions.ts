@@ -1,25 +1,10 @@
+"use server";
 import { redirect } from "next/navigation";
 
 import { AddConsultationReview } from "@/components/ConsultationReviewForm/add-consultation-review-schema.ts";
+import { type ConsultationAddReviewFormState } from "@/components/ConsultationReviewForm/ConsultationReviewForm.tsx";
 import { uploadFile } from "@/service/aws-s3.ts";
 import { notionClient, type UploadedFile } from "@/service/notion.ts";
-
-export enum Product {
-  CONSULTATION = "Consultation",
-  WORKSHOP = "Workshop",
-  COURSE = "Course",
-}
-
-export type ConsultationAddReviewFormState = {
-  message: string;
-  errors: {
-    name: string[];
-    surname: string[];
-    url: string[];
-    review: string[];
-    image: string[];
-  };
-};
 
 export const addReview = async (
   _prevState: ConsultationAddReviewFormState,
@@ -27,6 +12,7 @@ export const addReview = async (
 ) => {
   const isPublic = (formData.get("isPublic") as string) === "on";
   const image = formData.get("image") as File;
+  const rating = formData.get("rating") as string;
 
   const validatedFields = AddConsultationReview.safeParse({
     name: formData.get("name"),
@@ -38,7 +24,9 @@ export const addReview = async (
 
   const databaseId = process.env.NOTION_REVIEW_DB_ID;
 
-  if (!databaseId) throw new Error("Database ID not found");
+  if (!databaseId) {
+    throw new Error("Database ID not found");
+  }
 
   if (!validatedFields.success) {
     return {
@@ -55,6 +43,7 @@ export const addReview = async (
               url: string[];
               review: string[];
               image: string[];
+              rating: string[];
             },
             error,
           ) => {
@@ -71,7 +60,7 @@ export const addReview = async (
             }
             return acc;
           },
-          { name: [], surname: [], url: [], review: [], image: [] },
+          { name: [], surname: [], url: [], review: [], image: [], rating: [] },
         ),
     };
   }
@@ -129,13 +118,13 @@ export const addReview = async (
     },
     Ocena: {
       type: "number",
-      number: 5,
+      number: parseInt(rating ?? "5"),
     },
     "Product Type": {
       type: "select",
       select: {
         id: "[jEO",
-        name: Product.CONSULTATION,
+        name: "Consultation",
       },
     },
   };
@@ -148,5 +137,6 @@ export const addReview = async (
     // @ts-expect-error
     properties,
   });
+
   redirect("/sklep/konsultacje/dzieki-za-ocene");
 };

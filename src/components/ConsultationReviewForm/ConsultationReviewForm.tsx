@@ -6,11 +6,21 @@ import { useFormState } from "react-dom";
 
 import { AcceptIsPublicReview } from "@/components/AcceptIsPublicReview.tsx";
 import { Button } from "@/components/Button.tsx";
-import {
-  addReview,
-  type ConsultationAddReviewFormState,
-} from "@/components/ConsultationReviewForm/actions.ts";
+import { addReview } from "@/components/ConsultationReviewForm/actions.ts";
+import { StarRanking } from "@/components/StarRanking.tsx";
 import { CustomUserImageInputField } from "@/components/UploadImageInputField.tsx";
+
+export type ConsultationAddReviewFormState = {
+  message: string;
+  errors: {
+    name: string[];
+    surname: string[];
+    url: string[];
+    review: string[];
+    image: string[];
+    rating: string[];
+  };
+};
 
 const initialState: ConsultationAddReviewFormState = {
   message: "",
@@ -20,14 +30,13 @@ const initialState: ConsultationAddReviewFormState = {
     url: [],
     review: [],
     image: [],
+    rating: [],
   },
 };
 
 export function ConsultationReviewPageForm() {
   const [state, formAction] = useFormState(addReview, initialState);
   const searchParams = useSearchParams();
-  console.log({ searchParams });
-  // const router = useRouter();
 
   return (
     <Suspense>
@@ -35,11 +44,13 @@ export function ConsultationReviewPageForm() {
         action={formAction}
         className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
       >
-        <h2 className="flex text-md items-center font-semibold text-zinc-900 dark:text-zinc-100 text-lg">
+        <h2 className="flex text-md items-center font-semibold text-zinc-900 dark:text-zinc-100 text-lg justify-center">
           Formularz do przesłania opinii
         </h2>
         <div className="mt-4 flex flex-col space-y-4 ">
           <div className="flex flex-col space-y-2">
+            <StarRanking />
+
             <input
               autoComplete={"name"}
               type="text"

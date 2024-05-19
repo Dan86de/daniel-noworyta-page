@@ -44,6 +44,7 @@ export const AddConsultationReview = z.object({
   review: z
     .string()
     .min(10, "Twoja opinia musi mieć co najmniej 10 znaków.")
+    .max(1000, "Twoja opinia nie może mieć więcej niż 1000 znaków.")
     .or(z.literal("")),
   url: z.string().url("Niepoprawny adres strony.").optional().or(z.literal("")),
 });

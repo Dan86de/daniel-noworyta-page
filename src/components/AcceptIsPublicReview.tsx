@@ -7,7 +7,7 @@ export function AcceptIsPublicReview() {
         name={"isPublic"}
         defaultChecked
         className={
-          "p-px w-11 rounded-full bg-zinc-50 border border-spacing-4 border-zinc-900/10 data-[state=checked]:bg-orange-600 duration-300 dark:border-zinc-700 shadow-zinc-300 dark:shadow-zinc-800 dark:data-[state=checked]:shadow-orange-800 data-[state=checked]:shadow-orange-700 focus:border-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-500/10 dark:bg-zinc-600 dark:focus:border-orange-400 dark:focus:ring-orange-400/10 shadow-inner active:bg-zinc-100 dark:active:bg-zinc-500"
+          "p-px w-11 min-w-11 rounded-full bg-zinc-50 border border-spacing-4 border-zinc-900/10 data-[state=checked]:bg-orange-600 duration-300 dark:border-zinc-700 shadow-zinc-300 dark:shadow-zinc-800 dark:data-[state=checked]:shadow-orange-800 data-[state=checked]:shadow-orange-700 focus:border-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-500/10 dark:bg-zinc-600 dark:focus:border-orange-400 dark:focus:ring-orange-400/10 shadow-inner active:bg-zinc-100 dark:active:bg-zinc-500"
         }
       >
         <Switch.Thumb
@@ -16,7 +16,7 @@ export function AcceptIsPublicReview() {
           }
         />
       </Switch.Root>
-      <p className={"pt-1 text-zinc-700 dark:text-zinc-300"}>
+      <p className={"pt-1 text-zinc-700 dark:text-zinc-300 text-xs"}>
         Wyrażam zgodę na publikację opinii na stronie
       </p>
     </label>
