@@ -13,7 +13,7 @@ export default function NewsletterThanksALot() {
           <p className="pt-4">Witaj na pokładzie i do przeczytania wkrótce!</p>
           <p className="pt-4">
             <strong>P.S </strong>Pamiętaj,aby koniecznie dodać adres{" "}
-            <strong className={"font-semibold text-brand"}>
+            <strong className={"font-semibold"}>
               newsletter@programistafrontend.pl
             </strong>{" "}
             do swoich kontaktów. Dzięki temu moje treści na pewno do Ciebie

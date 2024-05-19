@@ -8,6 +8,15 @@ const nextConfig = {
     publicRuntimeConfig: {
         modifiedDate: new Date().toISOString(),
     },
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'pliki.poprawnykod.pl',
+                pathname: '/consultation_review_images/**',
+            },
+        ],
+    },
 }
 
 const withMDX = nextMDX({
