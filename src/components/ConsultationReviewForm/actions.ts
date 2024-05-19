@@ -1,12 +1,25 @@
 import { redirect } from "next/navigation";
 
 import { AddConsultationReview } from "@/components/ConsultationReviewForm/add-consultation-review-schema.ts";
-import {
-  type ConsultationAddReviewFormState,
-  Product,
-} from "@/components/ConsultationReviewForm/ConsultationReviewForm.tsx";
 import { uploadFile } from "@/service/aws-s3.ts";
 import { notionClient, type UploadedFile } from "@/service/notion.ts";
+
+export enum Product {
+  CONSULTATION = "Consultation",
+  WORKSHOP = "Workshop",
+  COURSE = "Course",
+}
+
+export type ConsultationAddReviewFormState = {
+  message: string;
+  errors: {
+    name: string[];
+    surname: string[];
+    url: string[];
+    review: string[];
+    image: string[];
+  };
+};
 
 export const addReview = async (
   _prevState: ConsultationAddReviewFormState,

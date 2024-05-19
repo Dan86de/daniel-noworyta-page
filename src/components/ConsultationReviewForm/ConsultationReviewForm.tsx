@@ -5,25 +5,11 @@ import { useFormState } from "react-dom";
 
 import { AcceptIsPublicReview } from "@/components/AcceptIsPublicReview.tsx";
 import { Button } from "@/components/Button.tsx";
-import { addReview } from "@/components/ConsultationReviewForm/actions.ts";
+import {
+  addReview,
+  type ConsultationAddReviewFormState,
+} from "@/components/ConsultationReviewForm/actions.ts";
 import { CustomUserImageInputField } from "@/components/UploadImageInputField.tsx";
-
-export enum Product {
-  CONSULTATION = "Consultation",
-  WORKSHOP = "Workshop",
-  COURSE = "Course",
-}
-
-export type ConsultationAddReviewFormState = {
-  message: string;
-  errors: {
-    name: string[];
-    surname: string[];
-    url: string[];
-    review: string[];
-    image: string[];
-  };
-};
 
 const initialState: ConsultationAddReviewFormState = {
   message: "",
