@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { Suspense } from "react";
+import React from "react";
 
 import { ConsultationReviewPageForm } from "@/components/ConsultationReviewForm/ConsultationReviewForm.tsx";
 import { ConsultationReviewPageHeader } from "@/components/ConsultationReviewPageHeader.tsx";
@@ -13,9 +13,7 @@ export default function ConsultationReview() {
     <Container className="mt-16">
       <div className="grid grid-cols-1 gap-y-2 gap-x-4 lg:grid-cols-2 lg:grid-rows-[auto_1fr]">
         <Prose>
-          <Suspense>
-            <ConsultationReviewPageHeader />
-          </Suspense>
+          <ConsultationReviewPageHeader />
 
           <p>
             Bardzo zależy mi na Twojej szczerej opinii o tym spotkaniu. Wypełnij
