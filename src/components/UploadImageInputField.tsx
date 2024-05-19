@@ -20,8 +20,8 @@ export function CustomUserImageInputField({ name }: { name: string }) {
   };
   return (
     <div className={"flex justify-center items-center"}>
-      <div className={"flex-col space-y-4 w-full pt-2"}>
-        <p className={"text-sm"}>Zdjęcie jest opcjonalne</p>
+      <div className={"flex-col space-y-1 w-full mt-4"}>
+        <p className={"text-xs"}>Zdjęcie jest opcjonalne</p>
         <div className={"flex text-center items-center gap-4"}>
           {imageSrc ? (
             <Image
@@ -70,7 +70,7 @@ export function CustomUserImageInputField({ name }: { name: string }) {
             ) : (
               <div className={"flex-col"}>
                 <p className={"text-xs"}>JPG, JPEG, WEBP, PNG.</p>
-                <p className={"text-xs"}>1MB Max.</p>
+                <p className={"text-xs"}>Rozmiar: Max 1MB</p>
               </div>
             )}
           </div>

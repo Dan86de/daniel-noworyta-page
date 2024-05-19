@@ -31,20 +31,20 @@ export default function ConsultationReview() {
               <li>lepiej zrozumieć Twoje potrzeby</li>
             </ul>
 
-            <h3 className="flex text-md items-center font-semibold text-zinc-900 dark:text-zinc-100 mt-12">
-              Pytania pomocnicze, z których możesz (ale nie musisz) skorzystać
-              wypełniając formularz:
-            </h3>
-            <ol>
-              <li>Jakie były Twoje wątpliwości przed zakupem konsultacji?</li>
-              <li>
-                Co zmieniło się po konsultacjach? Co z tej wiedzy się przyda?
-              </li>
-              <li>
-                Gdyby znajoma osoba zapytała Cię, czy warto skorzystać z
-                konsultacji, co powiesz?
-              </li>
-            </ol>
+            {/*<h3 className="flex text-md items-center font-semibold text-zinc-900 dark:text-zinc-100 mt-12">*/}
+            {/*  Pytania pomocnicze, z których możesz (ale nie musisz) skorzystać*/}
+            {/*  wypełniając formularz:*/}
+            {/*</h3>*/}
+            {/*<ol>*/}
+            {/*  <li>Jakie były Twoje wątpliwości przed zakupem konsultacji?</li>*/}
+            {/*  <li>*/}
+            {/*    Co zmieniło się po konsultacjach? Co z tej wiedzy się przyda?*/}
+            {/*  </li>*/}
+            {/*  <li>*/}
+            {/*    Gdyby znajoma osoba zapytała Cię, czy warto skorzystać z*/}
+            {/*    konsultacji, co powiesz?*/}
+            {/*  </li>*/}
+            {/*</ol>*/}
             <p>
               Ze względów formalnych zaznacz też, proszę czy zgadzasz się, żebym
               wykorzystał Twoją opinię w celach promocyjnych. Jeżeli chcesz,
