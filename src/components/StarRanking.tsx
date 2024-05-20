@@ -89,9 +89,8 @@ export const StarRanking = ({}) => {
               dla Ciebie bardziej przydatne?
             </p>
             <p className={"pt-4 text-xs opacity-75 mb-2"}>
-              Ankieta jest anonimowa, ale jeżeli podasz adres swojej strony,
-              skontaktuję się z Tobą i postaram się podpowiedzieć coś
-              indywidualnie.
+              Jeżeli podasz adres swojej strony, skontaktuję się z Tobą i
+              postaram się podpowiedzieć coś indywidualnie.
             </p>
           </div>
         )}
