@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 import { Container } from "@/components/Container.tsx";
 
 export default function ConsultationReviewThanks() {
@@ -8,7 +10,7 @@ export default function ConsultationReviewThanks() {
           data-sa-url="https://cac71b0f-4cfb-408a-a2ac-c7ae3c0762e8.scoreapp.com"
           data-sa-view="full"
         >
-          <script src="https://static.scoreapp.com/js/integration/v1/embedding.js?v=UKYAis"></script>
+          <Script src="https://static.scoreapp.com/js/integration/v1/embedding.js?v=UKYAis"></Script>
         </div>
       </div>
     </Container>
