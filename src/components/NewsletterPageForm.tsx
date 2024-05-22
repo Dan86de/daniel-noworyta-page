@@ -1,21 +1,11 @@
-"use client";
-import { useRouter } from "next/navigation";
-
 import { addSubscriberToForm } from "@/api/convertkit.ts";
 import { Button } from "@/components/Button.tsx";
 import { MailIcon } from "@/components/Icons.tsx";
 
 export function NewsletterPageForm() {
-  const router = useRouter();
-
-  const processForm = async (data: FormData) => {
-    await addSubscriberToForm(data);
-    router.push("/newsletter/dzieki");
-    return;
-  };
   return (
     <form
-      action={processForm}
+      action={addSubscriberToForm}
       className="rounded-2xl  border border-zinc-100 p-6 dark:border-zinc-700/40"
     >
       <h2 className="flex text-md items-center font-semibold text-zinc-900 dark:text-zinc-100">
