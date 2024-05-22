@@ -1,5 +1,7 @@
 "use server";
 
+import { redirect } from "next/navigation";
+
 const baseUrl = "https://api.convertkit.com/v3/";
 const formId = process.env.CONVERTKIT_FORM_ID;
 const secret = process.env.CONVERTKIT_API_SECRET;
@@ -12,7 +14,7 @@ export const addSubscriberToForm = async (formData: FormData) => {
     throw new Error("There is missing key in env.");
   }
 
-  return fetch(`${baseUrl}forms/${formId}/subscribe?api_secret=${secret}`, {
+  await fetch(`${baseUrl}forms/${formId}/subscribe?api_secret=${secret}`, {
     method: "POST",
     headers: new Headers({
       "Content-Type": "application/json; charset=utf-8",
@@ -23,4 +25,6 @@ export const addSubscriberToForm = async (formData: FormData) => {
       first_name,
     }),
   });
+
+  redirect("/newsletter/dzieki");
 };
