@@ -2,11 +2,11 @@
 
 import { useSearchParams } from "next/navigation";
 import React, { Suspense } from "react";
-import { useFormState, useFormStatus } from "react-dom";
+import { useFormState } from "react-dom";
 
 import { AcceptIsPublicReview } from "@/components/AcceptIsPublicReview.tsx";
-import { Button } from "@/components/Button.tsx";
 import { addReview } from "@/components/ConsultationReviewForm/actions.ts";
+import { ConsultationReviewFormSubmitBtn } from "@/components/ConsultationReviewForm/ConsultationReviewFormSubmitBtn.tsx";
 import { StarRanking } from "@/components/StarRanking.tsx";
 import { CustomUserImageInputField } from "@/components/UploadImageInputField.tsx";
 
@@ -36,7 +36,6 @@ const initialState: ConsultationAddReviewFormState = {
 
 export function ConsultationReviewPageForm() {
   const [state, formAction] = useFormState(addReview, initialState);
-  const { pending } = useFormStatus();
   const searchParams = useSearchParams();
 
   return (
@@ -144,14 +143,7 @@ export function ConsultationReviewPageForm() {
                 })}
             </ul>
           </div>
-          <Button
-            variant={"primary"}
-            type="submit"
-            className={"bg-orange-600 dark:bg-orange-600"}
-            disabled={pending}
-          >
-            {pending ? "Wysyłam opinię" : "Dodaj opinię"}
-          </Button>
+          <ConsultationReviewFormSubmitBtn />
         </div>
       </form>
     </Suspense>
