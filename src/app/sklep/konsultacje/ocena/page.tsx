@@ -19,7 +19,7 @@ export default function ConsultationReview() {
             <p>
               Bardzo zależy mi na Twojej szczerej opinii o tym spotkaniu.
               Wypełnij ten prosty formularz. Obiecuję, że{" "}
-              <strong>wypełnienie go zajmie Ci mniej niż 60 sekund.</strong>
+              <strong>wypełnienie go zajmie Ci mniej niż 1 minutę.</strong>
             </p>
             <p>
               Bardzo mi zależy, żeby każdy, kto korzysta z moich usług, był
