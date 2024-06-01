@@ -152,7 +152,12 @@ export default function Uses() {
               śledzić postępy w moich projektach, zarządzać zadaniami i
               dokumentować swoją pracę.
             </Tool>
-            <Tool title="Raycast">
+            <Tool
+              title="Raycast"
+              href={
+                "https://rize.io?code=F04325&utm_source=refer&name=ProgramistaFrontend"
+              }
+            >
               Raycast to narzędzie do szybkiego wyszukiwania plików, aplikacji i
               innych rzeczy na komputerze. Dzięki niemu mogę szybko i wygodnie
               pracować nad swoimi projektami.
