@@ -30,7 +30,7 @@ function Tool({
 }) {
   return (
     <Card as="li">
-      <Card.Title as="h3" href={href}>
+      <Card.Title as="h3" href={href} isTitleBrandColoured>
         {title}
       </Card.Title>
       <Card.Description>{children}</Card.Description>
@@ -152,12 +152,7 @@ export default function Uses() {
               śledzić postępy w moich projektach, zarządzać zadaniami i
               dokumentować swoją pracę.
             </Tool>
-            <Tool
-              title="Raycast"
-              href={
-                "https://rize.io?code=F04325&utm_source=refer&name=ProgramistaFrontend"
-              }
-            >
+            <Tool title="Raycast">
               Raycast to narzędzie do szybkiego wyszukiwania plików, aplikacji i
               innych rzeczy na komputerze. Dzięki niemu mogę szybko i wygodnie
               pracować nad swoimi projektami.
@@ -175,7 +170,12 @@ export default function Uses() {
               śledzić postępy w moich projektach, zarządzać zadaniami i
               dokumentować swoją pracę.
             </Tool>
-            <Tool title="Rize">
+            <Tool
+              title="Rize"
+              href={
+                "https://rize.io?code=F04325&utm_source=refer&name=ProgramistaFrontend"
+              }
+            >
               Rize to narzędzie do blokowania stron internetowych. Dzięki niemu
               mogę zablokować dostęp do stron, które mnie rozpraszają i skupić
               się na pracy. Dodatkowo dostaję obszerne raporty o tym jak spędzam
