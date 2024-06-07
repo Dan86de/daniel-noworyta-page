@@ -167,7 +167,10 @@ export default function Uses() {
               komputerze. Dzięki niemu mogę zaoszczędzić dużo czasu na
               wykonywaniu powtarzalnych czynności.
             </Tool>
-            <Tool title="Notion">
+            <Tool
+              title="Notion"
+              href={"https://affiliate.notion.so/yqwx1ua15z05"}
+            >
               Notion to narzędzie do zarządzania projektami. Dzięki niemu mogę
               śledzić postępy w moich projektach, zarządzać zadaniami i
               dokumentować swoją pracę.

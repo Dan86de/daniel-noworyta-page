@@ -21,7 +21,7 @@ export default function NewsletterPromo() {
     <Container className="mt-16 sm:mt-32">
       <div className="grid grid-cols-1 gap-y-2 gap-x-4 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12 ">
         <Prose>
-          <h2 className="flex text-md items-center font-semibold text-zinc-900 dark:text-zinc-100 mt-12">
+          <h2 className="flex items-center font-extrabold text-zinc-900 dark:text-zinc-100 mt-12 text-3xl">
             Hej!
           </h2>
           <ul>
