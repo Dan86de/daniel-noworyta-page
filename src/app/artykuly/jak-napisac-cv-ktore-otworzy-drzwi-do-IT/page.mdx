@@ -1,0 +1,51 @@
+import {ArticleLayout} from '@/components/ArticleLayout'
+
+export const article = {
+    author: 'Daniel Noworyta',
+    date: '2024-06-12',
+    title: 'Jak napisać CV, które otworzy drzwi do IT?',
+    description:
+        'W dzisiejszych czasach, kiedy rynek pracy jest bardzo konkurencyjny, warto zadbać o to, aby nasze CV wyróżniało się na tle innych. W tym artykule dowiesz się, jak napisać CV, które otworzy drzwi do branży IT.',
+}
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+Kto by tam pomyślał o odpowiedniej konstrukcji CV, kiedy tutaj na stole leży tyle technicznych tematów do ogarnięcia przed pierwszą pracą. Nic bardziej mylnego!
+
+CV to Twoja wizytówka, pierwszy kontakt z potencjalnym pracodawcą. To właśnie od niego zależy, czy dostaniesz szansę na rozmowę kwalifikacyjną. Ale jak napisać CV, które naprawdę przyciągnie uwagę?
+## Skup się na swoich umiejętnościach
+Może myślisz: „Nie mam doświadczenia w IT, jak mam wyróżnić się na tle innych kandydatów?” Pamiętam, jak sam miałem te same obawy. Kluczem jest skupienie się na umiejętnościach, które już posiadasz i które są transferowalne do IT. Czy jesteś dobry w rozwiązywaniu problemów? Czy potrafisz pracować w zespole? To są cechy, które pracodawcy cenią.
+
+## Nie bój się opowiedzieć swojej historii.
+Dlaczego chcesz zmienić ścieżkę kariery? Co Cię motywuje? Pracodawcy lubią widzieć pasję i determinację. Pamiętam, jak opowiadałem swoją historię o tym, jak zrezygnowałem z pracy jako inżynier samochodowy, aby podążać za swoją pasją do programowania. To zrobiło różnicę.
+Konkretne projekty
+
+Dzisiaj już prosta strona wizytówka nie wystarczy. Skupiłbym się na 2-3 konkretnych projektach. Linki do tych projektów powinny być linkami żywymi (klikalnymi w dokumencie pdf). 
+
+Projekty powinny pokazywać przekrój Twoich umiejętności na dane stanowisko. Ja aplikowałem do pracy na front-endzie. Dlatego na moim przykładzie skupiłem się na uwidocznieniu swoich zalet właśnie na to stanowisko:
+- HTML, CSS, JavaScript
+- React
+- TailwindCSS
+- REST API
+- Testowanie w Jest
+- GitHub
+- Lighthouse
+
+Przykładowym projektem, który pomoże Ci zaliczyć wszystkie punkty, jest np. aplikacja do zarządzania swoim budżetem domowym. Stworzona w NextJS. Ładna responsywna strona główna aplikacji z przedstawieniem oferty produktu i możliwością rejestracji/logowania. Nie muszę zaznaczyć, że lighthouse raport powinien być bliski wynikowi 100.
+
+Do tego własne API Restowe (np. na NestJS), które pozwala na rejestrację użytkowników i zapisywanie wydatków i przyporządkowanie ich do kategorii. Część aplikacji przetestowana przy pomocy Jest i wszystko budowane z użyciem kontroli wersji i GitHuba.
+
+### Taki projekt pokaże kilka umiejętności:
+- pokaże, że potrafisz tworzyć strony, które wyglądają i działają dobrze na różnych urządzeniach
+- pokaże, że umiesz tworzyć dynamiczne i angażujące interfejsy użytkownika
+- pokaże, że potrafisz pracować z zewnętrznymi źródłami danych, co jest często wymagane w pracy frontend developera
+- pokaże, że znasz podstawy testowania jednostkowego i integracyjnego
+- pokaże, że potrafisz zarządzać kodem i używać kontroli wersjii
+- pokaże, że potrafisz optymalizować kod i poprawiać wydajność aplikacji
+## Podsumowanie
+Pamiętaj, że Twoje projekty to Twoje portfolio – pokazują one Twoje umiejętności i pasję do kodowania. Wybierając projekty do swojego CV, skup się na różnorodności i jakości. Pokaż, że potrafisz pracować z różnymi technologiami i narzędziami, a także że jesteś gotowy na wyzwania, które czekają na Ciebie w świecie IT.
