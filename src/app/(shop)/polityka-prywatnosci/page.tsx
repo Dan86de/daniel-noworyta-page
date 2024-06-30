@@ -1,5 +1,5 @@
-import { Container } from "@/components/Container";
-import { Prose } from "@/components/Prose";
+import { Container } from "@/components/Container.tsx";
+import { Prose } from "@/components/Prose.tsx";
 
 export default function PrivacyPolicy() {
   return (

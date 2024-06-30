@@ -34,7 +34,7 @@ export async function GET(req: Request) {
   const articleIds = require
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    .context("../artykuly", true, /\/page\.mdx$/)
+    .context("../(general)/artykuly", true, /\/page\.mdx$/)
     .keys()
     .filter((key: string) => key.startsWith("./"))
     .map((key: string) => key.slice(2).replace(/\/page\.mdx$/, ""));

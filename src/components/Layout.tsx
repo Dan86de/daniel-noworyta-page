@@ -1,5 +1,6 @@
 import React from "react";
 
+import { ContainerOuter } from "@/components/Container.tsx";
 import { Footer } from "@/components/Footer.tsx";
 import { Header } from "@/components/Header.tsx";
 
@@ -14,7 +15,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <div className="relative flex w-full flex-col">
         <Header />
         <main className="flex-auto">{children}</main>
-        <Footer />
+        <ContainerOuter>
+          <Footer />
+        </ContainerOuter>
       </div>
     </>
   );

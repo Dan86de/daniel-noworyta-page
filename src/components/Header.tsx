@@ -23,6 +23,7 @@ export type NavItem = {
 const navItems: NavItem[] = [
   { href: "/artykuly", label: "Artykuły" },
   { href: "/newsletter", label: "Newsletter" },
+  { href: "/sklep", label: "Sklep" },
   { href: "/sprzet", label: "Sprzęt" },
 ];
 
