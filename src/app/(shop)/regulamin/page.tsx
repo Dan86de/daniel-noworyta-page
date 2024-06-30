@@ -172,7 +172,7 @@ export default function Regulations() {
         </ol>
 
         <h3>II USŁUGOBIORCY UPRZYWILEJOWANI</h3>
-        <ol start="3">
+        <ol start={3}>
           <li>
             Usługodawca ponosi wobec Usługobiorcy uprzywilejowanego
             odpowiedzialność za zgodność świadczenia z Umową, przewidzianą przez
@@ -272,7 +272,7 @@ export default function Regulations() {
           III POZASĄDOWE SPOSOBY ROZPATRYWANIA REKLAMACJI I DOCHODZENIA ROSZCZEŃ
         </h3>
 
-        <ol start="11">
+        <ol start={11}>
           <li>
             Usługodawca informuje Konsumenta o możliwości skorzystania z
             pozasądowych sposobów rozpatrywania reklamacji i dochodzenia
