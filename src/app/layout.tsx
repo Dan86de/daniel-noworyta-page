@@ -1,13 +1,12 @@
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import type { Metadata } from "next";
 import "@/styles/tailwind.css";
+import { type Metadata } from "next";
 import { type ReactNode } from "react";
 
 import { Providers } from "@/app/providers.tsx";
 import { Banner } from "@/components/CookieBanner.tsx";
-import { Layout } from "@/components/Layout.tsx";
 
 export const metadata: Metadata = {
   title: {
@@ -38,9 +37,7 @@ export default function RootLayout({
       <GoogleTagManager gtmId="GTM-KT7MFCQQ" />
       <body className="flex h-full bg-zinc-50 dark:bg-zinc-950">
         <Providers>
-          <div className="flex w-full">
-            <Layout>{children}</Layout>
-          </div>
+          <div className="flex w-full">{children}</div>
           <Banner />
         </Providers>
         <Analytics />
