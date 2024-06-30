@@ -12,7 +12,6 @@ import {
   YouTubeIcon,
 } from "@/components/SocialIcons.tsx";
 import { SocialLink } from "@/components/SocialLink.tsx";
-import { YouTubeComments } from "@/components/YouTubeComments.tsx";
 import { type ArticleWithSlug, getAllArticles } from "@/lib/articles.ts";
 
 export default async function Home() {
@@ -76,12 +75,6 @@ export default async function Home() {
             <Newsletter />
           </div>
         </div>
-      </Container>
-      <Container className="sm:px-8 mt-24 md:mt-28">
-        <h1 className="text-xl font-semibold text-zinc-800 sm:text-2xl dark:text-zinc-100">
-          Co o moich materiałach sądzą widzowie?
-        </h1>
-        <YouTubeComments />
       </Container>
     </>
   );

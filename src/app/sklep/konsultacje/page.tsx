@@ -6,10 +6,10 @@ export default function ConsultationProductPage() {
     <Container className="mt-16 sm:mt-32">
       <div className={"gap-y-4 flex flex-col max-w-2xl"}>
         {/*<h2 className="pb-4 text-2xl md:text-4xl">*/}
-        <h2 className="font-display text-5xl font-extrabold text-zinc-900">
+        <h2 className="font-display text-5xl font-bold">
           Twoja pierwsza praca w IT jest w zasięgu ręki!
         </h2>
-        <p className="mt-4 text-3xl text-zinc-600">
+        <p className="mt-4 text-3xl">
           Pokonaj swoje wątpliwości i znajdź pierwszą pracę w IT z moją pomocą.
         </p>
         <p>
