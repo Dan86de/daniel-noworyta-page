@@ -11,6 +11,10 @@ const variantStyles = {
     "bg-zinc-100 font-medium text-zinc-900 hover:bg-zinc-200 active:bg-zinc-200 active:text-zinc-900/60 dark:bg-zinc-800/75 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/75 dark:active:text-zinc-50/70",
   accept:
     "bg-green-500 text-white hover:bg-green-600 active:bg-green-500 dark:bg-green-500 dark:hover:bg-green-600 dark:active:bg-green-500",
+  reject:
+    "bg-red-500 text-white hover:bg-red-600 active:bg-red-500 dark:bg-red-500 dark:hover:bg-red-600 dark:active:bg-red-500",
+  orange:
+    "bg-orange-500 text-white hover:bg-orange-600 active:bg-orange-500 dark:bg-orange-500 dark:hover:bg-orange-600 dark:active:bg-orange-500",
 };
 
 type ButtonProps = {
