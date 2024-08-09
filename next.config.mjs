@@ -15,6 +15,11 @@ const nextConfig = {
                 hostname: 'pliki.poprawnykod.pl',
                 pathname: '/consultation_review_images/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'pliki.poprawnykod.pl',
+                pathname: '/user_avatars/**',
+            },
         ],
     },
 }

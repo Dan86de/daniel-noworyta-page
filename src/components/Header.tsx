@@ -10,7 +10,9 @@ import { useTheme } from "next-themes";
 import React, { Fragment, useEffect, useRef, useState } from "react";
 
 import { Container } from "@/components/Container";
+import { NewArrowWText } from "@/components/Icons.tsx";
 import avatarImage from "@/images/avatar.jpg";
+import { cn } from "@/lib/cn.ts";
 
 /**
  * Type for navigation item.
@@ -23,7 +25,7 @@ export type NavItem = {
 const navItems: NavItem[] = [
   { href: "/artykuly", label: "Artykuły" },
   { href: "/newsletter", label: "Newsletter" },
-  // { href: "/sklep", label: "Sklep" },
+  { href: "/sklep", label: "Sklep" },
   { href: "/sprzet", label: "Sprzęt" },
 ];
 
@@ -97,8 +99,13 @@ function MobileNavItem({
 }) {
   return (
     <li>
-      <Popover.Button as={Link} href={href} className="block py-2">
+      <Popover.Button as={Link} href={href} className={cn("block py-2")}>
         {children}
+        {href === "/sklep" && (
+          <span className="ml-4 text-orange-500 dark:text-orange-400">
+            Nowość
+          </span>
+        )}
       </Popover.Button>
     </li>
   );
@@ -180,13 +187,18 @@ function NavItem({
         className={clsx(
           "relative block px-3 py-2 transition",
           isActive
-            ? "text-orange-500 dark:text-orange-400"
-            : "hover:text-orange-500 dark:hover:text-orange-400",
+            ? "text-orange-600 dark:text-orange-600"
+            : "hover:text-orange-600 dark:hover:text-orange-600",
         )}
       >
         {children}
         {isActive && (
-          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/40 to-orange-500/0 dark:from-orange-400/0 dark:via-orange-400/40 dark:to-orange-400/0" />
+          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-600/0 via-orange-600/40 to-orange-600/0 dark:from-orange-600/0 dark:via-orange-600/40 dark:to-orange-600/0" />
+        )}
+        {href === "/sklep" && (
+          <span className="absolute -inset-x-8 bottom-2 h-px ">
+            <NewArrowWText />
+          </span>
         )}
       </Link>
     </li>

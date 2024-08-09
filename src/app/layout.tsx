@@ -7,6 +7,7 @@ import { type ReactNode } from "react";
 
 import { Providers } from "@/app/providers.tsx";
 import { Banner } from "@/components/CookieBanner.tsx";
+import { Metrics } from "@/metrics";
 
 export const metadata: Metadata = {
   title: {
@@ -43,6 +44,7 @@ export default function RootLayout({
         <Analytics />
         <SpeedInsights />
         <GoogleAnalytics gaId="G-41WJTNYSX1" />
+        <Metrics />
       </body>
     </html>
   );

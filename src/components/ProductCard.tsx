@@ -1,30 +1,74 @@
 import Link from "next/dist/client/link";
+import { type StaticRequire } from "next/dist/shared/lib/get-img-props";
+import Image, { type StaticImageData } from "next/image";
 
-import { cn } from "@/lib/cn.ts";
+import { Button } from "@/components/Button.tsx";
 
-export function Card() {
+interface CardProps {
+  url: string;
+  title: string;
+  subtitle: string;
+  price: string;
+  sellingPoints: string[];
+  withSale?: boolean;
+  srcImage: string | StaticRequire | StaticImageData;
+  altImage: string;
+  cartUrl?: string;
+}
+
+export function Card({
+  url,
+  sellingPoints,
+  title,
+  subtitle,
+  price,
+  withSale = false,
+  srcImage,
+  altImage,
+  cartUrl,
+}: CardProps) {
   return (
-    <Link href={"/sklep/konsultacje"} className="max-w-xs w-full">
-      <div
-        className={cn(
-          "group w-full cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800",
-          "bg-[url(https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80)] bg-cover",
-          // Preload hover image by setting it in a pseudo-element
-          "before:bg-[url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHJtYmpoMTk2ZXE3NmJvZ254MnNkYjR5dzk3MnAwMzdxN2lyemthYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L3FInpXg6pGEGXPR0a/giphy.webp)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]",
-          "hover:bg-[url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHJtYmpoMTk2ZXE3NmJvZ254MnNkYjR5dzk3MnAwMzdxN2lyemthYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L3FInpXg6pGEGXPR0a/giphy.webp)]",
-          "hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black hover:after:opacity-50",
-          "transition-all duration-500",
-        )}
-      >
-        <div className="text relative z-50">
-          <h1 className="font-bold text-xl md:text-3xl text-gray-50 relative">
-            Indywidualne konsultacje
-          </h1>
-          <p className="font-normal text-base text-gray-50 relative my-4">
-            Konsultacje “Twoja pierwsza praca w IT jest w zasięgu ręki!”
-          </p>
+    <div className="relative overflow-hidden rounded-lg shadow-xl p-6 max-w-[400px] text-zinc-900 dark:text-zinc-100 bg-white dark:bg-zinc-900">
+      {withSale && (
+        <div className="absolute top-0 left-0 bg-green-500 text-white p-2 rounded-br-lg">
+          Promocja
+        </div>
+      )}
+      {srcImage && (
+        <Image
+          src={srcImage}
+          alt={altImage}
+          className={"flex object-center w-40 h-40 mx-auto mt-14 mb-2"}
+        />
+      )}
+      <div className="py-8 px-4 sm:px-6">
+        <div className={"flex-col flex gap-1"}>
+          <h2 className="flex text-2xl items-center font-bold text-zinc-900 dark:text-zinc-100 mb-2">
+            {title}
+          </h2>
+          <p className="flex text-lg items-center font-semibold">{subtitle}</p>
+          <ul className={"list-disc ml-3 text-sm mb-6"}>
+            {sellingPoints.map((point) => (
+              <li key={point} className={""}>
+                {point}
+              </li>
+            ))}
+          </ul>
+          <p className={"text-3xl"}>{price}</p>
+          <Link href={url} className={"min-w-24 block"}>
+            <Button variant={"secondary"} className={"p-2 text-lg mt-1 w-full"}>
+              Szczegóły
+            </Button>
+          </Link>
+          {cartUrl && (
+            <Link href={cartUrl} className={"min-w-24 block"}>
+              <Button variant={"orange"} className={"p-2 text-lg mt-1 w-full"}>
+                Kup teraz
+              </Button>
+            </Link>
+          )}
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
