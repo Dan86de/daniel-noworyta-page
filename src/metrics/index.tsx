@@ -1,9 +1,10 @@
-import MicrosoftClarity from "./MicrosoftClarity";
+import { FacebookPixel } from "@/metrics/FacebookPixel.tsx";
 
-const Metrics = () => (
+import { MicrosoftClarity } from "./MicrosoftClarity";
+
+export const Metrics = () => (
   <>
     <MicrosoftClarity />
+    <FacebookPixel />
   </>
 );
-
-export default Metrics;
