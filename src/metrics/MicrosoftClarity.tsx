@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 
-const MicrosoftClarity = () => {
+export const MicrosoftClarity = () => {
   return (
     <Script
       id="microsoft-clarity-init"
@@ -19,5 +19,3 @@ const MicrosoftClarity = () => {
     />
   );
 };
-
-export default MicrosoftClarity;

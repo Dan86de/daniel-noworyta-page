@@ -1,6 +1,6 @@
 import { Providers } from "@/app/providers.tsx";
 import { Banner } from "@/components/CookieBanner.tsx";
-import Metrics from "@/metrics";
+import { Metrics } from "@/metrics";
 
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
