@@ -23,7 +23,7 @@ export const FeaturesSectionLandingPage = ({
           <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 sm:text-4xl">
             {title}
           </h2>
-          <div className="mt-6 text-lg leading-8 text-zinc-600 dark:text-zinc-300">
+          <div className="mt-6 text-lg leading-8 text-zinc-700 dark:text-zinc-300">
             {description}
           </div>
         </div>
@@ -33,7 +33,7 @@ export const FeaturesSectionLandingPage = ({
               <dt className="font-semibold text-zinc-900 dark:text-zinc-100">
                 {feature.name}
               </dt>
-              <dd className="mt-1 text-zinc-600 dark:text-zinc-300">
+              <dd className="mt-1 text-zinc-700 dark:text-zinc-300">
                 {feature.description}
               </dd>
             </div>

@@ -1,10 +1,14 @@
 import Image from "next/image";
+import React from "react";
 
 import { Button } from "@/components/Button.tsx";
 import { ContainerInner } from "@/components/Container.tsx";
 import { FeaturesSectionLandingPage } from "@/components/FeaturesSectionLandingPage.tsx";
 import { RightArrowIcon, RightArrowShortIcon } from "@/components/Icons.tsx";
+import { Prose } from "@/components/Prose.tsx";
 import { ReviewsSectionLandingPage } from "@/components/ReviewsSectionLandingPage.tsx";
+import signature from "@/images/signature.webp";
+import signatureDark from "@/images/signature_dark_white.webp";
 
 import CALENDARImage from "../../../../images/CALENDAR_ICON_CONSULTATION_PAGE.webp";
 import IDEAImage from "../../../../images/IDEA_ICON_CONSULTATION.webp";
@@ -159,6 +163,57 @@ export default function ConsultationProductPage() {
         </div>
       </section>
       <ContainerInner>
+        <Prose>
+          <h1 className="mt-2 text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+            Znajdź ludzi, którzy mierzą się z podobnym wyzwaniem jak ty i
+            spędzaj z nimi czas.
+          </h1>
+          <p className="mt-6 text-xl leading-8">
+            Myślisz o zmianie kariery i wejściu do dynamicznego świata IT? Masz
+            dosyć pracy, która nie przynosi satysfakcji i chcesz zbudować
+            przyszłość w branży, która oferuje nieograniczone możliwości
+            rozwoju? Wielu z nas marzy o tym, by stać się częścią
+            technologicznej rewolucji, ale nie wie, od czego zacząć.
+          </p>
+
+          <div className="mt-16 text-lg">
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 ">
+              Wszystko czego potrzebujesz, żeby ruszyć z miejsca
+            </h2>
+            <p className="mt-6 text-zinc-800 dark:text-zinc-300">
+              Niestety, proces zdobywania pierwszej pracy w IT może być
+              zniechęcający. Brak doświadczenia, niepewność co do wymaganych
+              umiejętności i ciągłe zmiany technologiczne mogą sprawić, że
+              poczujesz się przytłoczony. W dodatku, wiele dostępnych zasobów
+              jest rozproszonych i nie dostosowanych do indywidualnych potrzeb
+              początkujących programistów.
+            </p>
+            <p className="mt-8 text-zinc-800 dark:text-zinc-300">
+              Dlatego oferuję konsultacje 1na1, które pomogą Ci zdobyć pierwszą
+              pracę jako junior front end developer. Dzięki mojemu doświadczeniu
+              w branży IT i osobistej historii zmiany kariery, mogę dostarczyć
+              Ci spersonalizowane wskazówki, które przyspieszą Twoją drogę do
+              sukcesu. Podczas naszych spotkań, omówimy Twoje cele,
+              zidentyfikujemy kluczowe umiejętności do opanowania i stworzymy
+              plan działania, który pomoże Ci osiągnąć wymarzoną pracę w IT.
+              Dołącz do mnie i zacznij swoją podróż do satysfakcjonującej
+              kariery już dziś!
+            </p>
+          </div>
+        </Prose>
+        <div className="flex items-center justify-center gap-x-6 mt-12">
+          <Button
+            className={"text-lg md:text-xl"}
+            variant={"orange"}
+            href={"https://sklep.danielnoworyta.pl/cart/add_product/11829"}
+          >
+            <p className={"md:hidden"}>{"Wrzucam do koszyka"}</p>
+            <p className={"hidden md:inline"}>{"Wchodzę w to!"}</p>
+            <RightArrowShortIcon className={"block md:hidden"} />
+            <RightArrowIcon className={"hidden md:block"} />
+          </Button>
+        </div>
+
         <FeaturesSectionLandingPage
           features={[
             {
@@ -257,53 +312,73 @@ export default function ConsultationProductPage() {
             },
           ]}
         />
+        <section className={"text-lg pt-16 sm:pt-24"}>
+          <h1 className="mt-2 text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+            Ja też myślałem, że zdobycie pierwszej pracy w IT jest niemożliwe
+          </h1>
+          <div className={"grid md:grid-cols-2 gap-12"}>
+            <div>
+              <Image
+                width={500}
+                height={500}
+                alt=""
+                src="https://pliki.poprawnykod.pl/user_avatars/wbyRnl06gzsyzcJFA0ISK"
+                className="aspect-sqare w-full rounded-xl bg-zinc-50 dark:bg-zinc-800 object-cover shadow-lg z-10 mt-12 md:mt-8"
+              />
+            </div>
+            <Prose>
+              <p>Cześć, tu Daniel Noworyta z kanału Programistafrontend</p>
+              <p>
+                W 2018 roku pracowałem na etacie i czułem, że coś jest nie tak.
+                Nie byłem zadowolony ze swojej pracy i wiedziałem, że muszę coś
+                zmienić. Zacząłem szukać informacji o branży IT. Znalazłem
+                mnóstwo materiałów, ale nie wiedziałem, od czego zacząć.
+                Wiedziałem jednak jedno – chciałem zostać front-end developerem.
+              </p>
+              <p>
+                Każdego dnia uczyłem się programowania i dokumentowałem swój
+                proces na moim kanale YouTube, Programistafrontend. Po ponad
+                dwóch latach i sześciu miesiącach ciężkiej pracy, udało mi się
+                zdobyć swoją pierwszą pracę jako front-end developer. Dziś
+                jestem szczęśliwy, że mogę robić to, co kocham.
+              </p>
+              <p>
+                Jednak to nie wszystko. Uwielbiam patrzeć, jak ludzie wokół mnie
+                rozwijają swoje umiejętności i osiągają swoje cele. Chcę pomóc
+                innym, którzy są na początku swojej drogi w IT tak jak ja
+                kiedyś.
+              </p>
+              <p>
+                Rynek dla juniorów nie jest łaskawy i ciężko się wyróżnić. Sam
+                aplikowałem do pierwszej pracy, mając ponad 30 lat na karku i
+                rodzinę na utrzymaniu. Wiem, co dało mi zatrudnienie i teraz
+                chcę pomóc Ci wyróżnić się na tle innych kandydatów i zdobyć
+                swoją pierwszą pracę w IT.
+              </p>
+              <p>
+                Razem możemy przejść przez tę trudną, ale satysfakcjonującą
+                drogę do kariery w IT.
+              </p>
+              <div className={"w-full flex align-baseline justify-end"}>
+                <Image
+                  src={signature}
+                  alt="podpis"
+                  width={200}
+                  height={100}
+                  className="aspect-video dark:hidden"
+                />
+                <Image
+                  src={signatureDark}
+                  alt="podpis"
+                  width={200}
+                  height={100}
+                  className="hidden aspect-video dark:block"
+                />
+              </div>
+            </Prose>
+          </div>
+        </section>
       </ContainerInner>
     </>
-
-    // <Container className="mt-16 sm:mt-32">
-    //
-    //     <div className={"gap-y-4 flex flex-col max-w-2xl"}>
-    //       {/*<h2 className="pb-4 text-2xl md:text-4xl">*/}
-    //       <h2 className="font-display text-5xl font-bold">
-    //         Pierwsza praca w IT? To nie musi być trudne!
-    //       </h2>
-    //       <p className="mt-4 text-3xl">
-    //         Z moją osobistą pomocą przełamiesz bariery i zdobędziesz wymarzoną
-    //         pracę.
-    //       </p>
-    //       <p>
-    //         Każdy z nas marzy o stabilnej i satysfakcjonującej karierze. Dla wielu
-    //         osób, szczególnie tych, którzy pracują w branżach, gdzie nie widzą
-    //         realnych efektów swojej pracy, przejście do IT może być idealnym
-    //         rozwiązaniem. Widzisz, jak dynamicznie rozwija się sektor
-    //         technologiczny i zaczynasz myśleć, że praca jako programista frontend
-    //         mogłaby być właśnie tym, czego potrzebujesz, aby poczuć się spełnionym
-    //         zawodowo.
-    //       </p>
-    //       <p>
-    //         Niestety, zdobycie pierwszej pracy w IT nie jest łatwe. Brak
-    //         doświadczenia, nieznajomość rynku pracy, a także obawy związane z
-    //         nauką nowych technologii mogą skutecznie zniechęcić do zmiany kariery.
-    //         Wiele osób czuje się przytłoczonych ilością informacji dostępnych
-    //         online i nie wie, od czego zacząć. Właśnie te przeszkody sprawiają, że
-    //         wielu rezygnuje z marzeń o pracy w IT, zanim jeszcze na dobre zaczną.
-    //       </p>
-    //       <p>
-    //         Właśnie dlatego oferuję indywidualne konsultacje 1na1, które pomogą Ci
-    //         zdobyć pierwszą pracę w branży IT jako programista frontend. W trakcie
-    //         konsultacji mogę pomóc w tworzeniu skutecznego CV, budowie mocnego
-    //         portfolio, rozwijaniu umiejętności miękkich, budowie silnego wizerunku
-    //         online oraz rozwijaniu umiejętności technicznych. Dzięki mojemu
-    //         osobistemu doświadczeniu i wiedzy, przeprowadzę Cię przez cały proces
-    //         – od nauki podstawowych umiejętności, przez tworzenie portfolio, aż po
-    //         przygotowanie do rozmów kwalifikacyjnych. Razem pokonamy wszystkie
-    //         trudności, a Ty zyskasz pewność siebie i konkretne narzędzia, które
-    //         otworzą przed Tobą drzwi do wymarzonej kariery w IT.
-    //       </p>
-    //       <Button href={"https://sklep.danielnoworyta.pl/cart/add_product/11829"}>
-    //         {"Kup teraz -->"}
-    //       </Button>
-    //     </div>
-    //   </Container>
   );
 }
