@@ -42,7 +42,7 @@ export function Card({
       <Link href={url}>
         <div className="py-8 px-4 sm:px-6">
           <div className={"flex-col flex gap-1"}>
-            <h2 className="flex text-2xl items-center font-bold text-zinc-900 dark:text-zinc-100 mb-6">
+            <h2 className="flex text-2xl items-center font-bold text-zinc-900 dark:text-zinc-100 mb-2">
               {title}
             </h2>
             <p className="flex text-lg items-center font-semibold">
