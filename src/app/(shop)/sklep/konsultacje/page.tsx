@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 import { Button } from "@/components/Button.tsx";
+import { ContainerInner } from "@/components/Container.tsx";
+import { FeaturesSectionLandingPage } from "@/components/FeaturesSectionLandingPage.tsx";
 import { RightArrowIcon, RightArrowShortIcon } from "@/components/Icons.tsx";
 import { ReviewsSectionLandingPage } from "@/components/ReviewsSectionLandingPage.tsx";
 
@@ -69,7 +71,9 @@ export default function ConsultationProductPage() {
                   </h1>
                   <p className="mt-6 text-lg leading-8 sm:max-w-md lg:max-w-none">
                     Z moją osobistą pomocą przełamiesz bariery i zdobędziesz
-                    wymarzoną pracę.
+                    wymarzoną pracę. Oferuję indywidualne konsultacje 1na1,
+                    które pomogą Ci zdobyć pierwszą pracę w branży IT jako
+                    programista frontend.
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
                     <Button
@@ -87,7 +91,7 @@ export default function ConsultationProductPage() {
                       <RightArrowIcon className={"hidden md:block"} />
                     </Button>
                   </div>
-                  <span className={"mt-2 block"}>
+                  <span className={"mt-4 inline-block"}>
                     Cena konsultacji: <strong>200 zł za godzinę</strong>
                   </span>
                 </div>
@@ -154,83 +158,106 @@ export default function ConsultationProductPage() {
           </div>
         </div>
       </section>
-      <ReviewsSectionLandingPage
-        reviews={[
-          {
-            content:
-              "Miałem przyjemność porozmawiać z Danielem na temat mojego rozwoju zawodowego w kierunku junior frontend developera.  Dzięki tej rozmowie wiele się zmieniło i zyskałem jasny plan działania. Daniel wskazał kilka kluczowych obszarów, na które powinienem się skupić. Dzięki tym wskazówkom czuję, że mam klarowny plan działania, który pomoże mi osiągnąć moje zawodowe cele. Serdecznie polecam Daniela jako mentora i doradcę zawodowego. Dziękuję za cenną rozmowę i wsparcie!",
-            author: {
-              name: "Daniel Sółkowski",
-              image:
-                "https://pliki.poprawnykod.pl/consultation_review_images/Daniel-Su%C5%82kowski-1716497602523",
+      <ContainerInner>
+        <FeaturesSectionLandingPage
+          features={[
+            {
+              name: "Tworzenie skutecznego CV",
+              description:
+                "Pomogę Ci stworzyć CV, które przyciągnie uwagę rekrutera i pozwoli Ci wyróżnić się na tle innych kandydatów.",
             },
-            rating: 5,
-            id: "1",
-          },
+            {
+              name: "Budowa mocnego portfolio",
+              description:
+                "Pomogę Ci stworzyć portfolio, które pokazuje Twoje umiejętności i doświadczenie w najlepszym świetle.",
+            },
+            {
+              name: "Rozwój umiejętności miękkich",
+              description:
+                "Pomogę Ci w rozwijaniu umiejętności miękkich, które są kluczowe w pracy jako programista frontend.",
+            },
+            {
+              name: "Budowa silnego wizerunku online",
+              description:
+                "Pomogę Ci w budowaniu silnego wizerunku online, który pozwoli Ci wyróżnić się na tle innych kandydatów.",
+            },
+            {
+              name: "Rozwój umiejętności technicznych",
+              description:
+                "Pomogę Ci w rozwijaniu umiejętności technicznych, które są kluczowe w pracy jako programista frontend.",
+            },
+          ]}
+          title={"O czym możemy porozmawiać?"}
+          description={
+            <p>
+              Niestety, zdobycie pierwszej pracy w IT nie jest łatwe. Brak
+              doświadczenia, nieznajomość rynku pracy, a także obawy związane z
+              nauką nowych technologii mogą skutecznie zniechęcić do zmiany
+              kariery.{" "}
+              <strong className={"text-orange-600"}>
+                Wiele osób czuje się przytłoczonych ilością informacji
+                dostępnych online i nie wie, od czego zacząć.
+              </strong>{" "}
+              Właśnie dlatego oferuję indywidualne konsultacje 1na1, które
+              pomogą Ci zdobyć pierwszą pracę w branży IT jako programista
+              frontend. Tematy jakie możemy poruszyć:
+            </p>
+          }
+        />
+        <div className="flex items-center justify-center gap-x-6 mb-24">
+          <Button
+            className={"text-lg md:text-xl"}
+            variant={"orange"}
+            href={"https://sklep.danielnoworyta.pl/cart/add_product/11829"}
+          >
+            <p className={"md:hidden"}>{"Wrzucam do koszyka"}</p>
+            <p className={"hidden md:inline"}>
+              {"Tak, chcę zdobyć wymarzoną pracę w IT!"}
+            </p>
+            <RightArrowShortIcon className={"block md:hidden"} />
+            <RightArrowIcon className={"hidden md:block"} />
+          </Button>
+        </div>
+        <ReviewsSectionLandingPage
+          reviews={[
+            {
+              content:
+                "Miałem przyjemność porozmawiać z Danielem na temat mojego rozwoju zawodowego w kierunku junior frontend developera.  Dzięki tej rozmowie wiele się zmieniło i zyskałem jasny plan działania. Daniel wskazał kilka kluczowych obszarów, na które powinienem się skupić. Dzięki tym wskazówkom czuję, że mam klarowny plan działania, który pomoże mi osiągnąć moje zawodowe cele. Serdecznie polecam Daniela jako mentora i doradcę zawodowego. Dziękuję za cenną rozmowę i wsparcie!",
+              author: {
+                name: "Daniel Sółkowski",
+                image:
+                  "https://pliki.poprawnykod.pl/consultation_review_images/Daniel-Su%C5%82kowski-1716497602523",
+              },
+              rating: 5,
+              id: "1",
+            },
 
-          {
-            content:
-              "W trakcie konsultacji omówiliśmy moją obecną sytuację. Daniel wskazał mi kierunek, który może mnie przybliżyć do znalezienia pierwszej pracy. Po rozmowie doszedłem do różnych wniosków min. , że kilka rzeczy mógłbym poprawić kilka rzeczy w CV oraz zrozumiałem jak dużą wagę pracodawcy przywiązują do portfolio - nad którym będę teraz pracować.",
-            author: {
-              name: "Bartosz Stpiczynski",
-              image:
-                "https://pliki.poprawnykod.pl/consultation_review_images/Bartosz-Stpiczynski-1717011891946",
+            {
+              content:
+                "W trakcie konsultacji omówiliśmy moją obecną sytuację. Daniel wskazał mi kierunek, który może mnie przybliżyć do znalezienia pierwszej pracy. Po rozmowie doszedłem do różnych wniosków min. , że kilka rzeczy mógłbym poprawić kilka rzeczy w CV oraz zrozumiałem jak dużą wagę pracodawcy przywiązują do portfolio - nad którym będę teraz pracować.",
+              author: {
+                name: "Bartosz Stpiczynski",
+                image:
+                  "https://pliki.poprawnykod.pl/consultation_review_images/Bartosz-Stpiczynski-1717011891946",
+              },
+              rating: 5,
+              id: "2",
             },
-            rating: 5,
-            id: "2",
-          },
-          {
-            content:
-              "Chciałbym serdecznie podziękować Danielowi Noworycie za jego niesamowite wsparcie i inspirację dla młodych programistów. Jako doświadczony FrontEnd developer, Daniel nie tylko doskonale zna branżę IT, ale także z pasją pomaga początkującym znaleźć swoją pierwszą pracę.\n" +
-              "Daniel, dziękuję Ci za Twoje wsparcie i inspirację. Jesteś prawdziwym mentorem i przyjacielem dla wszystkich, którzy zaczynają swoją przygodę z programowaniem. Twoje wysiłki mają ogromny wpływ na rozwój nowych talentów w branży.",
-            author: {
-              name: "Michał Szczepansky",
-              image:
-                "https://pliki.poprawnykod.pl/consultation_review_images/Michal-Szczepansky-1716899345636",
+            {
+              content:
+                "Chciałbym serdecznie podziękować Danielowi Noworycie za jego niesamowite wsparcie i inspirację dla młodych programistów. Jako doświadczony FrontEnd developer, Daniel nie tylko doskonale zna branżę IT, ale także z pasją pomaga początkującym znaleźć swoją pierwszą pracę.\n" +
+                "Daniel, dziękuję Ci za Twoje wsparcie i inspirację. Jesteś prawdziwym mentorem i przyjacielem dla wszystkich, którzy zaczynają swoją przygodę z programowaniem. Twoje wysiłki mają ogromny wpływ na rozwój nowych talentów w branży. Właśnie dlatego oferuję indywidualne konsultacje 1na1, które pomogą Ci zdobyć pierwszą pracę w branży IT jako programista frontend.",
+              author: {
+                name: "Michał Szczepansky",
+                image:
+                  "https://pliki.poprawnykod.pl/consultation_review_images/Michal-Szczepansky-1716899345636",
+              },
+              rating: 5,
+              id: "3",
             },
-            rating: 5,
-            id: "3",
-          },
-        ]}
-      />
-      {/*<section>*/}
-      {/*  <div className="stars-rating:fill-orange-500 current-hover:fill-orange-500 mb-2 mt-2 flex flex-row-reverse items-center justify-center">*/}
-      {/*    <StarIcon*/}
-      {/*      className={cn(*/}
-      {/*        "h-8 w-8 cursor-pointer stroke-orange-500 p-1 fill-orange-500",*/}
-      {/*      )}*/}
-      {/*    />*/}
-
-      {/*    <StarIcon*/}
-      {/*      className={cn(*/}
-      {/*        "h-8 w-8 cursor-pointer stroke-orange-500 p-1 fill-orange-500",*/}
-      {/*      )}*/}
-      {/*    />*/}
-      {/*    <StarIcon*/}
-      {/*      className={cn(*/}
-      {/*        "h-8 w-8 cursor-pointer stroke-orange-500 p-1 fill-orange-500",*/}
-      {/*      )}*/}
-      {/*    />*/}
-      {/*    <StarIcon*/}
-      {/*      className={cn(*/}
-      {/*        "h-8 w-8 cursor-pointer stroke-orange-500 p-1 fill-orange-500",*/}
-      {/*      )}*/}
-      {/*    />*/}
-      {/*    <StarIcon*/}
-      {/*      className={cn(*/}
-      {/*        "h-8 w-8 cursor-pointer stroke-orange-500 p-1 fill-orange-500",*/}
-      {/*      )}*/}
-      {/*    />*/}
-      {/*  </div>*/}
-      {/*  <p>*/}
-      {/*    W trakcie konsultacji omówiliśmy moją obecną sytuację. Daniel wskazał*/}
-      {/*    mi kierunek, który może mnie przybliżyć do znalezienia pierwszej*/}
-      {/*    pracy. Po rozmowie doszedłem do różnych wniosków min. , że kilka*/}
-      {/*    rzeczy mógłbym poprawić kilka rzeczy w CV oraz zrozumiałem jak dużą*/}
-      {/*    wagę pracodawcy przywiązują do portfolio - nad którym będę teraz*/}
-      {/*    pracować.*/}
-      {/*  </p>*/}
-      {/*</section>*/}
+          ]}
+        />
+      </ContainerInner>
     </>
 
     // <Container className="mt-16 sm:mt-32">
