@@ -81,7 +81,7 @@ export default function ConsultationProductPage() {
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
                     <Button
-                      className={"text-lg md:text-xl"}
+                      className={"text-lg md:text-xl px-12"}
                       variant={"orange"}
                       href={
                         "https://sklep.danielnoworyta.pl/cart/add_product/11829"
@@ -203,12 +203,11 @@ export default function ConsultationProductPage() {
         </Prose>
         <div className="flex items-center justify-center gap-x-6 mt-12">
           <Button
-            className={"text-lg md:text-xl"}
+            className={"text-lg md:text-xl px-12"}
             variant={"orange"}
             href={"https://sklep.danielnoworyta.pl/cart/add_product/11829"}
           >
-            <p className={"md:hidden"}>{"Wrzucam do koszyka"}</p>
-            <p className={"hidden md:inline"}>{"Wchodzę w to!"}</p>
+            <p>{"Wchodzę w to!"}</p>
             <RightArrowShortIcon className={"block md:hidden"} />
             <RightArrowIcon className={"hidden md:block"} />
           </Button>
@@ -261,14 +260,11 @@ export default function ConsultationProductPage() {
         />
         <div className="flex items-center justify-center gap-x-6 mb-24">
           <Button
-            className={"text-lg md:text-xl"}
+            className={"text-lg md:text-xl md:px-12"}
             variant={"orange"}
             href={"https://sklep.danielnoworyta.pl/cart/add_product/11829"}
           >
-            <p className={"md:hidden"}>{"Wrzucam do koszyka"}</p>
-            <p className={"hidden md:inline"}>
-              {"Tak, chcę zdobyć wymarzoną pracę w IT!"}
-            </p>
+            <p>{"Chcę zdobyć pracę w IT!"}</p>
             <RightArrowShortIcon className={"block md:hidden"} />
             <RightArrowIcon className={"hidden md:block"} />
           </Button>
@@ -378,6 +374,17 @@ export default function ConsultationProductPage() {
             </Prose>
           </div>
         </section>
+        <div className="flex items-center justify-center gap-x-6 mb-24">
+          <Button
+            className={"text-lg md:text-xl px-12"}
+            variant={"orange"}
+            href={"https://sklep.danielnoworyta.pl/cart/add_product/11829"}
+          >
+            <p>{"Kup teraz!"}</p>
+            <RightArrowShortIcon className={"block md:hidden"} />
+            <RightArrowIcon className={"hidden md:block"} />
+          </Button>
+        </div>
       </ContainerInner>
     </>
   );
