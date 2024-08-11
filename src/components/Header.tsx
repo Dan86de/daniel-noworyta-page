@@ -11,6 +11,7 @@ import React, { Fragment, useEffect, useRef, useState } from "react";
 
 import { Container } from "@/components/Container";
 import avatarImage from "@/images/avatar.jpg";
+import { cn } from "@/lib/cn.ts";
 
 /**
  * Type for navigation item.
@@ -23,7 +24,7 @@ export type NavItem = {
 const navItems: NavItem[] = [
   { href: "/artykuly", label: "Artykuły" },
   { href: "/newsletter", label: "Newsletter" },
-  // { href: "/sklep", label: "Sklep" },
+  { href: "/sklep", label: "Sklep" },
   { href: "/sprzet", label: "Sprzęt" },
 ];
 
@@ -97,8 +98,13 @@ function MobileNavItem({
 }) {
   return (
     <li>
-      <Popover.Button as={Link} href={href} className="block py-2">
+      <Popover.Button as={Link} href={href} className={cn("block py-2")}>
         {children}
+        {href === "/sklep" && (
+          <span className="ml-4 text-orange-500 dark:text-orange-400">
+            Nowość
+          </span>
+        )}
       </Popover.Button>
     </li>
   );
