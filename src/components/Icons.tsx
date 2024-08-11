@@ -59,6 +59,7 @@ export function RightArrowIcon(props: ComponentPropsWithoutRef<"svg">) {
     </svg>
   );
 }
+
 export function RightArrowShortIcon(props: ComponentPropsWithoutRef<"svg">) {
   return (
     <svg
