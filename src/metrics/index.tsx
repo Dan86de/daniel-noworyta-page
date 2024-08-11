@@ -1,5 +1,4 @@
-import { FacebookPixel } from "@/metrics/FacebookPixel.tsx";
-
+import { FacebookPixel } from "./FacebookPixel";
 import { MicrosoftClarity } from "./MicrosoftClarity";
 
 export const Metrics = () => (

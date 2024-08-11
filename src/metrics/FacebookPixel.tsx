@@ -5,8 +5,11 @@ import Script from "next/script";
 export const FacebookPixel = () => {
   return (
     <>
-      <Script id="facebook-pixel" strategy="afterInteractive">
-        {`
+      <Script
+        id="facebook-pixel"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -17,8 +20,10 @@ export const FacebookPixel = () => {
           'https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', '${process.env.NEXT_PUBLIC_FACEBOOK_PIXEL}');
           fbq('track', 'PageView');
-        `}
-      </Script>
+        `,
+        }}
+      />
+
       <noscript>
         <img
           height="1"
