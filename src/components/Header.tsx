@@ -196,7 +196,7 @@ function NavItem({
           <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-600/0 via-orange-600/40 to-orange-600/0 dark:from-orange-600/0 dark:via-orange-600/40 dark:to-orange-600/0" />
         )}
         {href === "/sklep" && (
-          <span className="absolute -inset-x-8 bottom-2 h-px ">
+          <span className="absolute -inset-x-8 bottom-2 h-px">
             <NewArrowWText />
           </span>
         )}
