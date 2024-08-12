@@ -1,19 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
+import { pageData } from "@/app/(shop)/sklep/konsultacje/pageData.tsx";
 import { Button } from "@/components/Button.tsx";
 import { ContainerInner } from "@/components/Container.tsx";
 import { FeaturesSectionLandingPage } from "@/components/FeaturesSectionLandingPage.tsx";
 import { RightArrowIcon, RightArrowShortIcon } from "@/components/Icons.tsx";
 import { Prose } from "@/components/Prose.tsx";
 import { ReviewsSectionLandingPage } from "@/components/ReviewsSectionLandingPage.tsx";
-import signature from "@/images/signature.webp";
-import signatureDark from "@/images/signature_dark_white.webp";
-
-import CALENDARImage from "../../../../images/CALENDAR_ICON_CONSULTATION_PAGE.webp";
-import IDEAImage from "../../../../images/IDEA_ICON_CONSULTATION.webp";
-import PROFILEImage from "../../../../images/PROFILE_ICON_CONSULTATION.webp";
-import QAImage from "../../../../images/QA_ICON_CONSULTATION.webp";
 
 export default function ConsultationProductPage() {
   return (
@@ -81,7 +75,7 @@ export default function ConsultationProductPage() {
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
                     <Button
-                      className={"text-lg md:text-xl px-12"}
+                      className={"text-lg md:text-xl px-6"}
                       variant={"orange"}
                       href={
                         "https://sklep.danielnoworyta.pl/cart/add_product/11829"
@@ -106,7 +100,7 @@ export default function ConsultationProductPage() {
                         width={180}
                         height={300}
                         alt=""
-                        src={QAImage}
+                        src={pageData.images.QAImage}
                         className="aspect-[2/3] w-full rounded-xl bg-zinc-50 dark:bg-zinc-800 object-cover shadow-lg z-10"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-orange-300/50 dark:ring-orange-900/30" />
@@ -128,7 +122,7 @@ export default function ConsultationProductPage() {
                         alt=""
                         width={180}
                         height={300}
-                        src={IDEAImage}
+                        src={pageData.images.IDEAImage}
                         className="aspect-[2/3] w-full rounded-xl bg-zinc-50 dark:bg-zinc-800 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-orange-300/50 dark:ring-orange-900/30" />
@@ -140,7 +134,7 @@ export default function ConsultationProductPage() {
                         width={180}
                         height={300}
                         alt=""
-                        src={CALENDARImage}
+                        src={pageData.images.CALENDARImage}
                         className="aspect-[2/3] w-full rounded-xl bg-zinc-50 dark:bg-zinc-800 object-cover shadow-lg z-10"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-orange-300/50 dark:ring-orange-900/30" />
@@ -150,7 +144,7 @@ export default function ConsultationProductPage() {
                         width={180}
                         height={300}
                         alt=""
-                        src={PROFILEImage}
+                        src={pageData.images.PROFILEImage}
                         className="aspect-[2/3] w-full rounded-xl bg-zinc-50 dark:bg-zinc-800 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-orange-300/50 dark:ring-orange-900/30" />
@@ -176,34 +170,28 @@ export default function ConsultationProductPage() {
             technologicznej rewolucji, ale nie wie, od czego zacząć.
           </p>
 
-          <div className="mt-16 text-lg">
-            <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 ">
-              Wszystko czego potrzebujesz, żeby ruszyć z miejsca
-            </h2>
-            <p className="mt-6 text-zinc-800 dark:text-zinc-300">
-              Niestety, proces zdobywania pierwszej pracy w IT może być
-              zniechęcający. Brak doświadczenia, niepewność co do wymaganych
-              umiejętności i ciągłe zmiany technologiczne mogą sprawić, że
-              poczujesz się przytłoczony. W dodatku, wiele dostępnych zasobów
-              jest rozproszonych i nie dostosowanych do indywidualnych potrzeb
-              początkujących programistów.
-            </p>
-            <p className="mt-8 text-zinc-800 dark:text-zinc-300">
-              Dlatego oferuję konsultacje 1na1, które pomogą Ci zdobyć pierwszą
-              pracę jako junior front end developer. Dzięki mojemu doświadczeniu
-              w branży IT i osobistej historii zmiany kariery, mogę dostarczyć
-              Ci spersonalizowane wskazówki, które przyspieszą Twoją drogę do
-              sukcesu. Podczas naszych spotkań, omówimy Twoje cele,
-              zidentyfikujemy kluczowe umiejętności do opanowania i stworzymy
-              plan działania, który pomoże Ci osiągnąć wymarzoną pracę w IT.
-              Dołącz do mnie i zacznij swoją podróż do satysfakcjonującej
-              kariery już dziś!
-            </p>
-          </div>
+          <p className="mt-6 text-xl leading-8">
+            Niestety, proces zdobywania pierwszej pracy w IT może być
+            zniechęcający. Brak doświadczenia, niepewność co do wymaganych
+            umiejętności i ciągłe zmiany technologiczne mogą sprawić, że
+            poczujesz się przytłoczony. W dodatku, wiele dostępnych zasobów jest
+            rozproszonych i nie dostosowanych do indywidualnych potrzeb
+            początkujących programistów.
+          </p>
+          <p className="mt-6 text-xl leading-8">
+            Dlatego oferuję konsultacje 1na1, które pomogą Ci zdobyć pierwszą
+            pracę jako junior front end developer. Dzięki mojemu doświadczeniu w
+            branży IT i osobistej historii zmiany kariery, mogę dostarczyć Ci
+            spersonalizowane wskazówki, które przyspieszą Twoją drogę do
+            sukcesu. Podczas naszych spotkań, omówimy Twoje cele,
+            zidentyfikujemy kluczowe umiejętności do opanowania i stworzymy plan
+            działania, który pomoże Ci osiągnąć wymarzoną pracę w IT. Dołącz do
+            mnie i zacznij swoją podróż do satysfakcjonującej kariery już dziś!
+          </p>
         </Prose>
-        <div className="flex items-center justify-center gap-x-6 mt-12">
+        <div className="flex items-center justify-center gap-x-6 my-12 sm:my-24">
           <Button
-            className={"text-lg md:text-xl px-12"}
+            className={"text-lg md:text-xl px-12 min-w-80"}
             variant={"orange"}
             href={"https://sklep.danielnoworyta.pl/cart/add_product/11829"}
           >
@@ -214,51 +202,13 @@ export default function ConsultationProductPage() {
         </div>
 
         <FeaturesSectionLandingPage
-          features={[
-            {
-              name: "Tworzenie skutecznego CV",
-              description:
-                "Pomogę Ci stworzyć CV, które przyciągnie uwagę rekrutera i pozwoli Ci wyróżnić się na tle innych kandydatów.",
-            },
-            {
-              name: "Budowa mocnego portfolio",
-              description:
-                "Pomogę Ci stworzyć portfolio, które pokazuje Twoje umiejętności i doświadczenie w najlepszym świetle.",
-            },
-            {
-              name: "Rozwój umiejętności miękkich",
-              description:
-                "Pomogę Ci w rozwijaniu umiejętności miękkich, które są kluczowe w pracy jako programista frontend.",
-            },
-            {
-              name: "Budowa silnego wizerunku online",
-              description:
-                "Pomogę Ci w budowaniu silnego wizerunku online, który pozwoli Ci wyróżnić się na tle innych kandydatów.",
-            },
-            {
-              name: "Rozwój umiejętności technicznych",
-              description:
-                "Pomogę Ci w rozwijaniu umiejętności technicznych, które są kluczowe w pracy jako programista frontend.",
-            },
-          ]}
+          features={pageData.features}
           title={"O czym możemy porozmawiać?"}
-          description={
-            <p>
-              Niestety, zdobycie pierwszej pracy w IT nie jest łatwe. Brak
-              doświadczenia, nieznajomość rynku pracy, a także obawy związane z
-              nauką nowych technologii mogą skutecznie zniechęcić do zmiany
-              kariery.{" "}
-              <strong className={"text-orange-600"}>
-                Wiele osób czuje się przytłoczonych ilością informacji
-                dostępnych online i nie wie, od czego zacząć.
-              </strong>{" "}
-              Właśnie dlatego oferuję indywidualne konsultacje 1na1, które
-              pomogą Ci zdobyć pierwszą pracę w branży IT jako programista
-              frontend. Tematy jakie możemy poruszyć:
-            </p>
-          }
+          description={null}
         />
-        <div className="flex items-center justify-center gap-x-6 mb-24">
+
+        <ReviewsSectionLandingPage reviews={pageData.reviews} />
+        <div className="flex items-center justify-center gap-x-6 my-12 sm:my-24">
           <Button
             className={"text-lg md:text-xl md:px-12"}
             variant={"orange"}
@@ -269,46 +219,7 @@ export default function ConsultationProductPage() {
             <RightArrowIcon className={"hidden md:block"} />
           </Button>
         </div>
-        <ReviewsSectionLandingPage
-          reviews={[
-            {
-              content:
-                "Miałem przyjemność porozmawiać z Danielem na temat mojego rozwoju zawodowego w kierunku junior frontend developera.  Dzięki tej rozmowie wiele się zmieniło i zyskałem jasny plan działania. Daniel wskazał kilka kluczowych obszarów, na które powinienem się skupić. Dzięki tym wskazówkom czuję, że mam klarowny plan działania, który pomoże mi osiągnąć moje zawodowe cele. Serdecznie polecam Daniela jako mentora i doradcę zawodowego. Dziękuję za cenną rozmowę i wsparcie!",
-              author: {
-                name: "Daniel Sółkowski",
-                image:
-                  "https://pliki.poprawnykod.pl/consultation_review_images/Daniel-Su%C5%82kowski-1716497602523",
-              },
-              rating: 5,
-              id: "1",
-            },
-
-            {
-              content:
-                "W trakcie konsultacji omówiliśmy moją obecną sytuację. Daniel wskazał mi kierunek, który może mnie przybliżyć do znalezienia pierwszej pracy. Po rozmowie doszedłem do różnych wniosków min. , że kilka rzeczy mógłbym poprawić kilka rzeczy w CV oraz zrozumiałem jak dużą wagę pracodawcy przywiązują do portfolio - nad którym będę teraz pracować.",
-              author: {
-                name: "Bartosz Stpiczynski",
-                image:
-                  "https://pliki.poprawnykod.pl/consultation_review_images/Bartosz-Stpiczynski-1717011891946",
-              },
-              rating: 5,
-              id: "2",
-            },
-            {
-              content:
-                "Chciałbym serdecznie podziękować Danielowi Noworycie za jego niesamowite wsparcie i inspirację dla młodych programistów. Jako doświadczony FrontEnd developer, Daniel nie tylko doskonale zna branżę IT, ale także z pasją pomaga początkującym znaleźć swoją pierwszą pracę.\n" +
-                "Daniel, dziękuję Ci za Twoje wsparcie i inspirację. Jesteś prawdziwym mentorem i przyjacielem dla wszystkich, którzy zaczynają swoją przygodę z programowaniem. Twoje wysiłki mają ogromny wpływ na rozwój nowych talentów w branży. Właśnie dlatego oferuję indywidualne konsultacje 1na1, które pomogą Ci zdobyć pierwszą pracę w branży IT jako programista frontend.",
-              author: {
-                name: "Michał Szczepansky",
-                image:
-                  "https://pliki.poprawnykod.pl/consultation_review_images/Michal-Szczepansky-1716899345636",
-              },
-              rating: 5,
-              id: "3",
-            },
-          ]}
-        />
-        <section className={"text-lg pt-16 sm:pt-24"}>
+        <section className={"text-lg"}>
           <h1 className="mt-2 text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
             Ja też myślałem, że zdobycie pierwszej pracy w IT jest niemożliwe
           </h1>
@@ -333,23 +244,22 @@ export default function ConsultationProductPage() {
               </p>
               <p>
                 Każdego dnia uczyłem się programowania i dokumentowałem swój
-                proces na moim kanale YouTube, Programistafrontend. Po ponad
-                dwóch latach i sześciu miesiącach ciężkiej pracy, udało mi się
-                zdobyć swoją pierwszą pracę jako front-end developer. Dziś
-                jestem szczęśliwy, że mogę robić to, co kocham.
+                proces na moim kanale YouTube,{" "}
+                <a href={"https://youtube.com/@danielnoworyta"}>
+                  Programistafrontend
+                </a>
+                . Po ponad dwóch latach i sześciu miesiącach ciężkiej pracy,
+                udało mi się zdobyć swoją pierwszą pracę jako front-end
+                developer. Dziś jestem szczęśliwy, że mogę robić to, co kocham.
               </p>
               <p>
-                Jednak to nie wszystko. Uwielbiam patrzeć, jak ludzie wokół mnie
-                rozwijają swoje umiejętności i osiągają swoje cele. Chcę pomóc
-                innym, którzy są na początku swojej drogi w IT tak jak ja
-                kiedyś.
+                Uwielbiam patrzeć, jak ludzie wokół mnie rozwijają swoje
+                umiejętności i osiągają swoje cele. Chcę pomóc innym, którzy są
+                na początku swojej drogi w IT tak jak ja kiedyś.
               </p>
               <p>
-                Rynek dla juniorów nie jest łaskawy i ciężko się wyróżnić. Sam
-                aplikowałem do pierwszej pracy, mając ponad 30 lat na karku i
-                rodzinę na utrzymaniu. Wiem, co dało mi zatrudnienie i teraz
-                chcę pomóc Ci wyróżnić się na tle innych kandydatów i zdobyć
-                swoją pierwszą pracę w IT.
+                Wiem, co dało mi zatrudnienie i teraz chcę pomóc Ci wyróżnić się
+                na tle innych kandydatów i zdobyć swoją pierwszą pracę w IT.
               </p>
               <p>
                 Razem możemy przejść przez tę trudną, ale satysfakcjonującą
@@ -357,14 +267,14 @@ export default function ConsultationProductPage() {
               </p>
               <div className={"w-full flex align-baseline justify-end"}>
                 <Image
-                  src={signature}
+                  src={pageData.images.signature}
                   alt="podpis"
                   width={200}
                   height={100}
                   className="aspect-video dark:hidden"
                 />
                 <Image
-                  src={signatureDark}
+                  src={pageData.images.signatureDark}
                   alt="podpis"
                   width={200}
                   height={100}
@@ -374,9 +284,9 @@ export default function ConsultationProductPage() {
             </Prose>
           </div>
         </section>
-        <div className="flex items-center justify-center gap-x-6 mb-24">
+        <div className="flex items-center justify-center">
           <Button
-            className={"text-lg md:text-xl px-12"}
+            className={"text-lg md:text-xl min-w-80"}
             variant={"orange"}
             href={"https://sklep.danielnoworyta.pl/cart/add_product/11829"}
           >
