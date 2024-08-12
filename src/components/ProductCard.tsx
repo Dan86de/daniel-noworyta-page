@@ -13,6 +13,7 @@ interface CardProps {
   withSale?: boolean;
   srcImage: string | StaticRequire | StaticImageData;
   altImage: string;
+  cartUrl?: string;
 }
 
 export function Card({
@@ -24,6 +25,7 @@ export function Card({
   withSale = false,
   srcImage,
   altImage,
+  cartUrl,
 }: CardProps) {
   return (
     <div className="relative overflow-hidden rounded-lg shadow-xl p-6 max-w-[400px] text-zinc-900 dark:text-zinc-100 bg-white dark:bg-zinc-900">
@@ -39,29 +41,34 @@ export function Card({
           className={"flex object-center w-40 h-40 mx-auto mt-14 mb-2"}
         />
       )}
-      <Link href={url}>
-        <div className="py-8 px-4 sm:px-6">
-          <div className={"flex-col flex gap-1"}>
-            <h2 className="flex text-2xl items-center font-bold text-zinc-900 dark:text-zinc-100 mb-2">
-              {title}
-            </h2>
-            <p className="flex text-lg items-center font-semibold">
-              {subtitle}
-            </p>
-            <ul className={"list-disc ml-3 text-sm mb-6"}>
-              {sellingPoints.map((point) => (
-                <li key={point} className={""}>
-                  {point}
-                </li>
-              ))}
-            </ul>
-            <p className={"text-3xl"}>{price}</p>
-            <Button variant={"orange"} className={"p-2 text-lg mt-1"}>
+      <div className="py-8 px-4 sm:px-6">
+        <div className={"flex-col flex gap-1"}>
+          <h2 className="flex text-2xl items-center font-bold text-zinc-900 dark:text-zinc-100 mb-2">
+            {title}
+          </h2>
+          <p className="flex text-lg items-center font-semibold">{subtitle}</p>
+          <ul className={"list-disc ml-3 text-sm mb-6"}>
+            {sellingPoints.map((point) => (
+              <li key={point} className={""}>
+                {point}
+              </li>
+            ))}
+          </ul>
+          <p className={"text-3xl"}>{price}</p>
+          <Link href={url} className={"min-w-24 block"}>
+            <Button variant={"secondary"} className={"p-2 text-lg mt-1 w-full"}>
               Szczegóły
             </Button>
-          </div>
+          </Link>
+          {cartUrl && (
+            <Link href={cartUrl} className={"min-w-24 block"}>
+              <Button variant={"orange"} className={"p-2 text-lg mt-1 w-full"}>
+                Kup teraz
+              </Button>
+            </Link>
+          )}
         </div>
-      </Link>
+      </div>
     </div>
   );
 }

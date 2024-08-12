@@ -8,7 +8,7 @@ export default function ShopPage() {
   return (
     <ContainerInner className={"mt-6"}>
       <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100 py-8 text-center">
-        Sklep programistyfrontend
+        Sklep
       </h1>
       <Card
         url={"/sklep/konsultacje"}
@@ -25,6 +25,7 @@ export default function ShopPage() {
         withSale={true}
         srcImage={consultationImage as StaticImageData}
         altImage={"Ikona konsultacji"}
+        cartUrl={"https://sklep.danielnoworyta.pl/cart/add_product/11829"}
       />
     </ContainerInner>
   );
