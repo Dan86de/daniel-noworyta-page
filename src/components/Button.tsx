@@ -31,7 +31,7 @@ export function Button({
 }: ButtonProps) {
   className = cn(
     "inline-flex items-center gap-2 justify-center rounded-md pt-2 pb-1.5 px-3 text-sm outline-offset-2 transition active:transition-none " +
-      "appearance-none border border-zinc-900/10 shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-500/10 dark:border-zinc-700  dark:focus:border-orange-400 dark:focus:ring-orange-400/10",
+      "appearance-none border border-zinc-900/10 shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-500/10 dark:border-zinc-700  dark:focus:border-orange-400 dark:focus:ring-orange-400/10 font-bold tracking-wide",
     variantStyles[variant],
     className,
   );

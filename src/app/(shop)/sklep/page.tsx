@@ -1,9 +1,8 @@
 import { type StaticImageData } from "next/image";
 
 import { Card } from "@/components/ProductCard.tsx";
+import bookImage from "@/images/book.svg";
 import consultationImage from "@/images/consultation_product_icon.svg";
-import ebookImage from "@/images/ebook_product_icon.svg";
-import workshopImage from "@/images/workshop_product_icon.svg";
 
 export default function ShopPage() {
   return (
@@ -36,38 +35,20 @@ export default function ShopPage() {
         />
         <Card
           url={"/sklep/ebook/pierwsza-praca-w-it"}
-          title={"Ebook Pierwsza praca w IT"}
+          title={"Pierwsza praca w IT"}
           subtitle={"Dowiesz się z niego:"}
           regularPrice={99}
           price={79}
           sellingPoints={[
             "Jak skutecznie uczyć programowania?",
-            "Jak zdobyć doświadczenie, nie mając pracy?",
+            "Jak zdobyć potrzebne doświadczenie?",
             "Jak zbudować mocne portfolio?",
             "Jak zdobyć pracę w IT bez doświadczenia?",
             "Jak dobrze wypaść podczas rekrutacji?",
           ]}
           withSale={true}
-          srcImage={ebookImage as StaticImageData}
+          srcImage={bookImage as StaticImageData}
           altImage={"Ikona ebooka Pierwsza praca w IT"}
-          cartUrl={"SOME_CART_URL"}
-        />
-        <Card
-          url={"/sklep/warsztaty/skuteczne-cv"}
-          title={"Warsztat Skuteczne CV"}
-          subtitle={"Dowiesz się z niego:"}
-          regularPrice={379}
-          price={299}
-          sellingPoints={[
-            "Jak wyróżnić się w oczach rekrutera?",
-            "Jakie błędy popełniasz w swoim CV?",
-            "Jakie informacje powinno zawierać CV?",
-            "Jakie projekty warto umieścić w CV?",
-            "Czego unikać w CV?",
-          ]}
-          withSale={true}
-          srcImage={workshopImage as StaticImageData}
-          altImage={"Ikona warsztatu Skuteczne CV"}
           cartUrl={"SOME_CART_URL"}
         />
       </div>

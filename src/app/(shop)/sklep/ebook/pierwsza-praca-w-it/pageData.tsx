@@ -2,7 +2,7 @@ import { type StaticImageData } from "next/image";
 
 import { type Feature } from "@/components/FeaturesSectionLandingPage.tsx";
 import { type Review } from "@/components/ReviewsSectionLandingPage.tsx";
-import ticketImage from "@/images/ticket.svg";
+import BookImage from "@/images/book.svg";
 
 interface PageData {
   productImage: StaticImageData;
@@ -11,7 +11,7 @@ interface PageData {
 }
 
 export const pageData: PageData = {
-  productImage: ticketImage as StaticImageData,
+  productImage: BookImage as StaticImageData,
   reviews: [
     {
       content:
