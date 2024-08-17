@@ -4,8 +4,8 @@ import { Container } from "@/components/Container.tsx";
 export default function NewsletterThanksALot() {
   return (
     <>
-      <Container className="flex h-full items-center pt-16 sm:pt-32">
-        <div className="flex flex-col  max-w-2xl">
+      <Container className="flex h-full items-center pt-16 sm:pt-32 ">
+        <div className="flex flex-col max-w-2xl mx-auto">
           <h2 className="pb-4 text-2xl md:text-4xl">
             Potwierdziłeś/aś swój zapis na newsletter{" "}
             <span className="font-bold">Programistafrontend</span>

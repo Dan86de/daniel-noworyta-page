@@ -5,8 +5,6 @@ import defaultTheme from "tailwindcss/defaultTheme";
 // @ts-ignore
 import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
 
-import typographyStyles from "./typography.ts";
-
 // eslint-disable-next-line import/no-default-export
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -53,7 +51,6 @@ export default {
       "8xl": ["6rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
     },
-    typography: typographyStyles,
   },
   plugins: [typographyPlugin, addVariablesForColors],
 } satisfies Config;

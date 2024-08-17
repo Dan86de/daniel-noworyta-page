@@ -5,8 +5,8 @@ export default function NewsletterThanks() {
   return (
     <>
       <Container className="flex h-full items-center pt-16 sm:pt-32">
-        <div className="flex flex-col max-w-2xl">
-          <h2 className="pb-4 text-2xl md:text-4xl">
+        <div className="flex flex-col max-w-2xl mx-auto">
+          <h2 className="pb-4 text-2xl md:text-4xl ">
             Zapisałeś się na newsletter{" "}
             <span className="font-bold">Programistafrontend</span>
           </h2>

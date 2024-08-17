@@ -8,7 +8,8 @@ interface CardProps {
   url: string;
   title: string;
   subtitle: string;
-  price: string;
+  regularPrice?: number;
+  price: number;
   sellingPoints: string[];
   withSale?: boolean;
   srcImage: string | StaticRequire | StaticImageData;
@@ -21,6 +22,7 @@ export function Card({
   sellingPoints,
   title,
   subtitle,
+  regularPrice,
   price,
   withSale = false,
   srcImage,
@@ -28,7 +30,7 @@ export function Card({
   cartUrl,
 }: CardProps) {
   return (
-    <div className="relative overflow-hidden rounded-lg shadow-xl p-6 max-w-[400px] text-zinc-900 dark:text-zinc-100 bg-white dark:bg-zinc-900">
+    <div className="relative overflow-hidden rounded-lg shadow-xl p-6 w-[400px] max-w-[400px] text-zinc-900 dark:text-zinc-100 bg-white dark:bg-zinc-900">
       {withSale && (
         <div className="absolute top-0 left-0 bg-green-500 text-white p-2 rounded-br-lg">
           Promocja
@@ -54,7 +56,22 @@ export function Card({
               </li>
             ))}
           </ul>
-          <p className={"text-3xl"}>{price}</p>
+          <p>
+            {regularPrice && (
+              <span
+                className={
+                  "text-sm line-through text-red-500 dark:text-red-400"
+                }
+              >
+                {regularPrice}
+                {" zł"}
+              </span>
+            )}
+          </p>
+          <p className={"text-3xl"}>
+            {price}
+            {" zł"}
+          </p>
           <Link href={url} className={"min-w-24 block"}>
             <Button variant={"secondary"} className={"p-2 text-lg mt-1 w-full"}>
               Szczegóły

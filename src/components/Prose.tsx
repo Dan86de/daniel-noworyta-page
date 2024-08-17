@@ -7,6 +7,12 @@ export function Prose({
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
   return (
-    <div className={clsx(className, "prose dark:prose-invert")} {...props} />
+    <div
+      className={clsx(
+        className,
+        "prose prose-zinc dark:prose-invert dark:prose-zinc prose-a:text-orange-500",
+      )}
+      {...props}
+    />
   );
 }
