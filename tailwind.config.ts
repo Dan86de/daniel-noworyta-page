@@ -12,18 +12,28 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Geomanist", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
         mono: ["Silka Mono", ...defaultTheme.fontFamily.mono],
+        display: ["Cabinet Grotesk", ...defaultTheme.fontFamily.sans],
       },
       fontWeight: {
         semibold: "500",
       },
       animation: {
+        "meteor-effect": "meteor 5s linear infinite",
         move: "move 5s linear infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
         move: {
           "0%": { transform: "translateX(-200px)" },
           "100%": { transform: "translateX(200px)" },

@@ -1,13 +1,22 @@
+import { Providers } from "@/app/providers.tsx";
+import { Banner } from "@/components/CookieBanner.tsx";
+
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "@/styles/tailwind.css";
 import { type Metadata } from "next";
+import { Inter } from "next/font/google";
 import { type ReactNode } from "react";
 
-import { Providers } from "@/app/providers.tsx";
-import { Banner } from "@/components/CookieBanner.tsx";
+import { cn } from "@/lib/cn.ts";
 import { Metrics } from "@/metrics";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -35,8 +44,24 @@ export default function RootLayout({
       className="h-full antialiased overflow-y-scroll"
       suppressHydrationWarning
     >
+      <head>
+        <link
+          rel="preconnect"
+          href="https://cdn.fontshare.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700&display=swap"
+        />
+      </head>
       <GoogleTagManager gtmId="GTM-KT7MFCQQ" />
-      <body className="flex h-full bg-zinc-50 dark:bg-zinc-950">
+      <body
+        className={cn(
+          "flex h-full bg-zinc-50 dark:bg-zinc-950",
+          inter.variable,
+        )}
+      >
         <Providers>
           <div className="flex w-full">{children}</div>
           <Banner />
