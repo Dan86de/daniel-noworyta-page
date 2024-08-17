@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { StarIcon } from "@/components/Icons.tsx";
+import { Prose } from "@/components/Prose.tsx";
 import { cn } from "@/lib/cn.ts";
 
 interface ReviewsSectionLandingPageProps {
@@ -19,7 +20,7 @@ export const ReviewsSectionLandingPage = ({
   reviews,
 }: ReviewsSectionLandingPageProps) => {
   return (
-    <>
+    <section className={""}>
       <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 sm:text-4xl mb-12">
         Co mówią osoby, które skorzystały z konsultacji?
       </h2>
@@ -32,13 +33,11 @@ export const ReviewsSectionLandingPage = ({
               {/*</h3>*/}
               <p className="sr-only">{review.rating} out of 5 stars</p>
 
-              <div
-                dangerouslySetInnerHTML={{ __html: review.content }}
-                className="mt-3 space-y-6 text-sm text-zinc-900 dark:text-zinc-100"
-              />
+              <Prose className={"max-w-none"}>
+                <p>{review.content}</p>
+              </Prose>
             </div>
-
-            <div className="order-1 flex items-center sm:flex-col sm:items-start">
+            <div className="order-1 flex items-center sm:flex-col sm:items-start w-[124px]">
               <Image
                 width={100}
                 height={100}
@@ -71,6 +70,6 @@ export const ReviewsSectionLandingPage = ({
           </div>
         ))}
       </div>
-    </>
+    </section>
   );
 };
