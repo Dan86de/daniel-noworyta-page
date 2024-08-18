@@ -37,7 +37,7 @@ function Testimonial({
             <Image
               className="h-12 w-12 object-cover"
               src={author.image}
-              alt=""
+              alt={author.name}
               width={48}
               height={48}
             />
@@ -50,7 +50,7 @@ function Testimonial({
           <Link
             href={author.url}
             target={"_blank"}
-            className="mt-1 text-sm opacity-50"
+            className="mt-1 text-sm opacity-50 max-w-[25ch] truncate block"
           >
             {author.url}
           </Link>
