@@ -16,6 +16,11 @@ export default {
         mono: ["Silka Mono", ...defaultTheme.fontFamily.mono],
         display: ["Cabinet Grotesk", ...defaultTheme.fontFamily.sans],
       },
+      borderRadius: {
+        "4xl": "2rem",
+        "5xl": "3rem",
+        "6xl": "5rem",
+      },
       fontWeight: {
         semibold: "500",
       },

@@ -1,4 +1,3 @@
-
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -41,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="pl"
-      className="h-full antialiased overflow-y-scroll"
+      className="h-full antialiased  scroll-smooth"
       suppressHydrationWarning
     >
       <head>
@@ -58,7 +57,7 @@ export default function RootLayout({
       <GoogleTagManager gtmId="GTM-KT7MFCQQ" />
       <body
         className={cn(
-          "flex h-full bg-zinc-50 dark:bg-zinc-950",
+          "flex bg-zinc-50 dark:bg-zinc-950 min-h-full",
           inter.variable,
         )}
       >

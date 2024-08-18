@@ -30,7 +30,7 @@ export function Card({
   cartUrl,
 }: CardProps) {
   return (
-    <div className="relative overflow-hidden rounded-lg shadow-xl p-6 w-[400px] max-w-[400px] text-zinc-900 dark:text-zinc-100 bg-white dark:bg-zinc-900">
+    <div className="relative overflow-hidden rounded-lg shadow-xl p-6 max-w-[400px] text-zinc-900 dark:text-zinc-100 bg-white dark:bg-zinc-900">
       {withSale && (
         <div className="absolute top-0 left-0 bg-green-500 text-white p-2 rounded-br-lg">
           Promocja

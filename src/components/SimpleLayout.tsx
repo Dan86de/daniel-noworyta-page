@@ -1,16 +1,19 @@
 import { Container } from "@/components/Container";
+import { cn } from "@/lib/cn.ts";
 
 export function SimpleLayout({
   title,
   intro,
   children,
+  className,
 }: {
   title: string;
   intro: string;
   children?: React.ReactNode;
+  className?: string;
 }) {
   return (
-    <Container className="mt-16 sm:mt-32">
+    <Container className={cn("mt-16 sm:mt-32", className)}>
       <header className="max-w-2xl">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
           {title}

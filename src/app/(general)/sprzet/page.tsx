@@ -60,6 +60,7 @@ export default function Uses() {
   return (
     <>
       <SimpleLayout
+        className="mb-32"
         title="Sprzęt, który używam. Gadżety, które uwielbiam. Wszystko co szczerze polecam."
         intro="Często jestem pytany o rzeczy, których używam programując, tworząc content i utrzymując produktywność. Oto duża lista wszystkich moich ulubionych rzeczy."
       >
