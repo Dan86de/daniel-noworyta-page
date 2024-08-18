@@ -48,7 +48,7 @@ export default async function ArticlesIndex() {
       title="Piszę o nauce programowania i zmianie branży na IT."
       intro="Wszystkie moje długie przemyślenia na tematy związane z nauką programowania dla początkujących, zmianie branży na IT, rozwijaniu swojej kariery i nie tylko, zebrane w porządku chronologicznym."
     >
-      <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+      <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 mb-32">
         <div className="flex max-w-3xl flex-col space-y-16">
           {articles.map((article) => (
             <Article key={article.slug} article={article} />

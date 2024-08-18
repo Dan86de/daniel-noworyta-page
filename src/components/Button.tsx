@@ -14,7 +14,7 @@ const variantStyles = {
   reject:
     "bg-red-500 text-white hover:bg-red-600 active:bg-red-500 dark:bg-red-500 dark:hover:bg-red-600 dark:active:bg-red-500",
   orange:
-    "bg-orange-500 text-white hover:bg-orange-600 active:bg-orange-500 dark:bg-orange-500 dark:hover:bg-orange-600 dark:active:bg-orange-500",
+    "bg-orange-500 text-zinc-50 hover:bg-orange-600 active:bg-orange-500 dark:bg-orange-500 dark:hover:bg-orange-600 dark:active:bg-orange-500",
 };
 
 type ButtonProps = {

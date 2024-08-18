@@ -13,7 +13,7 @@ import { SocialLink } from "@/components/SocialLink.tsx";
 
 export function Footer({ isShop }: { isShop?: boolean }) {
   return (
-    <footer className="mt-32 flex-none">
+    <footer className="flex-none">
       <div className="border-t border-zinc-100 pb-16 pt-10 dark:border-zinc-700/40">
         <ContainerInner>
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">

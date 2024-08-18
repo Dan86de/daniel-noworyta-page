@@ -1,3 +1,5 @@
+import { Providers } from "@/app/providers.tsx";
+import { Banner } from "@/components/CookieBanner.tsx";
 
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
@@ -7,8 +9,6 @@ import { type Metadata } from "next";
 import { Inter } from "next/font/google";
 import { type ReactNode } from "react";
 
-import { Providers } from "@/app/providers.tsx";
-import { Banner } from "@/components/CookieBanner.tsx";
 import { cn } from "@/lib/cn.ts";
 import { Metrics } from "@/metrics";
 
@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang="pl"
-      className="h-full antialiased overflow-y-scroll"
+      className="h-full antialiased  scroll-smooth"
       suppressHydrationWarning
     >
       <head>
@@ -58,7 +58,7 @@ export default function RootLayout({
       <GoogleTagManager gtmId="GTM-KT7MFCQQ" />
       <body
         className={cn(
-          "flex h-full bg-zinc-50 dark:bg-zinc-950",
+          "flex bg-zinc-50 dark:bg-zinc-950 min-h-full",
           inter.variable,
         )}
       >

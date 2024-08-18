@@ -1,7 +1,6 @@
 import { type StaticImageData } from "next/image";
 
 import { Card } from "@/components/ProductCard.tsx";
-import bookImage from "@/images/book.svg";
 import consultationImage from "@/images/consultation_product_icon.svg";
 
 export default function ShopPage() {
@@ -33,24 +32,24 @@ export default function ShopPage() {
           altImage={"Ikona konsultacji"}
           cartUrl={"https://sklep.danielnoworyta.pl/cart/add_product/11829"}
         />
-        <Card
-          url={"/sklep/ebook/pierwsza-praca-w-it"}
-          title={"Pierwsza praca w IT"}
-          subtitle={"Dowiesz się z niego:"}
-          regularPrice={99}
-          price={79}
-          sellingPoints={[
-            "Jak skutecznie uczyć programowania?",
-            "Jak zdobyć potrzebne doświadczenie?",
-            "Jak zbudować mocne portfolio?",
-            "Jak zdobyć pracę w IT bez doświadczenia?",
-            "Jak dobrze wypaść podczas rekrutacji?",
-          ]}
-          withSale={true}
-          srcImage={bookImage as StaticImageData}
-          altImage={"Ikona ebooka Pierwsza praca w IT"}
-          cartUrl={"SOME_CART_URL"}
-        />
+        {/*<Card*/}
+        {/*  url={"/sklep/ebook/pierwsza-praca-w-it"}*/}
+        {/*  title={"Pierwsza praca w IT"}*/}
+        {/*  subtitle={"Dowiesz się z niego:"}*/}
+        {/*  regularPrice={99}*/}
+        {/*  price={79}*/}
+        {/*  sellingPoints={[*/}
+        {/*    "Jak skutecznie uczyć programowania?",*/}
+        {/*    "Jak zdobyć potrzebne doświadczenie?",*/}
+        {/*    "Jak zbudować mocne portfolio?",*/}
+        {/*    "Jak zdobyć pracę w IT bez doświadczenia?",*/}
+        {/*    "Jak dobrze wypaść podczas rekrutacji?",*/}
+        {/*  ]}*/}
+        {/*  withSale={true}*/}
+        {/*  srcImage={bookImage as StaticImageData}*/}
+        {/*  altImage={"Ikona ebooka Pierwsza praca w IT"}*/}
+        {/*  cartUrl={"SOME_CART_URL"}*/}
+        {/*/>*/}
       </div>
     </div>
   );
