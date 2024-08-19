@@ -72,6 +72,7 @@ export function Card({
             {price}
             {" zł"}
           </p>
+          <span className={"text-xxs"}>Cena brutto</span>
           <Link href={url} className={"min-w-24 block"}>
             <Button variant={"secondary"} className={"p-2 text-lg mt-1 w-full"}>
               Szczegóły

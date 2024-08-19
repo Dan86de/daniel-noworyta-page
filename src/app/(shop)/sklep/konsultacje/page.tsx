@@ -29,7 +29,7 @@ export default function ConsultationProductPage() {
         cartUrl={"https://sklep.danielnoworyta.pl/cart/add_product/11829"}
         productPriceTag={
           <>
-            Cena konsultacji: <strong>400zł + VAT / h</strong>
+            Cena konsultacji: <strong>492zł / h</strong>
           </>
         }
       />
