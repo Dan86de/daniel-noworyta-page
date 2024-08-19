@@ -62,9 +62,9 @@ export const ObjectionsSection = () => {
             </h2>
             <div className="mt-6">
               <p>
-                Konsultacje są płatne. Po opłaceniu zamówienia otrzymasz ode
-                mnie email z linkiem do kalendarza, w którym możesz wybrać
-                dogodny dla siebie termin.
+                Po wybraniu terminu w kalendarzu otrzymasz ode mnie wiadomość z
+                pytaniami wstępnymi. Pomogą mi one lepiej przygotować się do
+                konsultacji z Tobą.
               </p>
             </div>
             <h3 className="mt-4 font-display">W tej fazie możesz liczyć na:</h3>
@@ -121,20 +121,6 @@ export const ObjectionsSection = () => {
           </FadeIn>
         </div>
       </Container>
-
-      {/*<Section*/}
-      {/*  title="Przygotowanie do konsultacji"*/}
-      {/*  image={{ shape: 1, src: application }}*/}
-      {/*>*/}
-      {/*  <div className="space-y-6">*/}
-      {/*    <p>*/}
-      {/*      Po umówieniu spotkania otrzymasz ode mnie email z pytaniami, które*/}
-      {/*      pozwolą mi się lepiej przygotować do konsultacji z Tobą. Proszę*/}
-      {/*      odpowiedz na nie, abyśmy mogli jak najlepiej wykorzystać czas*/}
-      {/*      konsultacji.*/}
-      {/*    </p>*/}
-      {/*  </div>*/}
-      {/*</Section>*/}
     </section>
   );
 };
