@@ -129,7 +129,7 @@ export default function Uses() {
             </Tool>
           </ToolsSection>
           <ToolsSection title="Projektowanie graficzne">
-            <Tool title="Figma">
+            <Tool title="Figma" href={"https://figma.com"}>
               Figma to narzędzie do projektowania stron internetowych. Dzięki
               niemu mogę tworzyć interaktywne projekty, które wyglądają jak
               prawdziwe strony internetowe.
@@ -148,21 +148,32 @@ export default function Uses() {
             </Tool>
           </ToolsSection>
           <ToolsSection title="Produktywność">
-            <Tool title="ToDoist">
+            <Tool title="ToDoist" href={"https://todoist.com"}>
               ToDoist to narzędzie do zarządzania zadaniami. Dzięki niemu mogę
               śledzić postępy w moich projektach, zarządzać zadaniami i
               dokumentować swoją pracę.
             </Tool>
-            <Tool title="Raycast">
+            <Tool
+              title="Superhuman"
+              href={"https://superhuman.com/refer/qkkehidg"}
+            >
+              Superhuman to narzędzie do obsługi poczty elektronicznej. Dzięki
+              niemu mogę szybko i wygodnie zarządzać swoją skrzynką mailową.
+            </Tool>
+            <Tool title="Raycast" href={"https://www.raycast.com/"}>
               Raycast to narzędzie do szybkiego wyszukiwania plików, aplikacji i
               innych rzeczy na komputerze. Dzięki niemu mogę szybko i wygodnie
               pracować nad swoimi projektami.
             </Tool>
-            <Tool title="Keyboard Maestro">
+            <Tool
+              title="Keyboard Maestro"
+              href={"https://www.keyboardmaestro.com/main/"}
+            >
               Keyboard Maestro to narzędzie do automatyzacji zadań na
               komputerze. Dzięki niemu mogę zaoszczędzić dużo czasu na
               wykonywaniu powtarzalnych czynności.
             </Tool>
+
             <Tool
               title="Notion"
               href={"https://affiliate.notion.so/yqwx1ua15z05"}
