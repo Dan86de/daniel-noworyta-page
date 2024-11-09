@@ -51,15 +51,8 @@
     "import/no-cycle": "error",
     "import/no-default-export": "error",
 
-    // allow {} even though it's unsafe but comes handy
-    "@typescript-eslint/ban-types": [
-      "error",
-      {
-        "types": {
-          "{}": false
-        }
-      }
-    ],
+    // banning Object and built-in class wrappers such as Number
+    "no-wrapper-object-types": "error",
 
     "@typescript-eslint/consistent-type-imports": [
       "error",
