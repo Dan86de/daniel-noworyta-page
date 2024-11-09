@@ -1,3 +1,6 @@
+import { type StaticImageData } from "next/image";
+import React from "react";
+
 import { Button } from "@/components/Button.tsx";
 import { Author } from "@/components/ProductLanding/AboutMe.tsx";
 import { Hero } from "@/components/ProductLanding/Hero.tsx";
@@ -6,8 +9,6 @@ import { NavBar } from "@/components/ProductLanding/Navbar";
 import { ObjectionsSection } from "@/components/ProductLanding/ObjectionsSection.tsx";
 import { Testimonials } from "@/components/ProductLanding/TestimonialsSection.tsx";
 import ticketImage from "@/images/ticket.svg";
-import { type StaticImageData } from "next/image";
-import React from "react";
 
 export default function ConsultationProductPage() {
   return (

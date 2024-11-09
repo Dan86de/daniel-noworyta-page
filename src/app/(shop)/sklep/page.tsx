@@ -1,6 +1,7 @@
+import { type StaticImageData } from "next/image";
+
 import { Card } from "@/components/ProductCard.tsx";
 import consultationImage from "@/images/consultation_product_icon.svg";
-import { type StaticImageData } from "next/image";
 
 export default function ShopPage() {
   return (
