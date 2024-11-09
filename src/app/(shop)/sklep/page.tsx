@@ -18,8 +18,8 @@ export default function ShopPage() {
           url={"/sklep/konsultacje"}
           title={"Godzina konsultacji"}
           subtitle={"Tematy w których mogę Ci pomóc:"}
-          regularPrice={800}
-          price={492}
+          regularPrice={492}
+          price={200}
           sellingPoints={[
             "Tworzenie skutecznego CV",
             "Budowa mocnego portfolio",
