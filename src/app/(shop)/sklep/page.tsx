@@ -1,7 +1,6 @@
-import { type StaticImageData } from "next/image";
-
 import { Card } from "@/components/ProductCard.tsx";
 import consultationImage from "@/images/consultation_product_icon.svg";
+import { type StaticImageData } from "next/image";
 
 export default function ShopPage() {
   return (
@@ -18,8 +17,8 @@ export default function ShopPage() {
           url={"/sklep/konsultacje"}
           title={"Godzina konsultacji"}
           subtitle={"Tematy w których mogę Ci pomóc:"}
-          regularPrice={800}
-          price={492}
+          regularPrice={492}
+          price={200}
           sellingPoints={[
             "Tworzenie skutecznego CV",
             "Budowa mocnego portfolio",
