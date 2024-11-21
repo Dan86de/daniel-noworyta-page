@@ -152,6 +152,14 @@ export default function Uses() {
               ToDoist to narzędzie do zarządzania zadaniami. Dzięki niemu mogę
               śledzić postępy w moich projektach, zarządzać zadaniami i
               dokumentować swoją pracę.
+            </Tool>{" "}
+            <Tool
+              title="Riverside"
+              href={"https://www.riverside.fm/?via=daniel-noworyta"}
+            >
+              Najlepsze narzędzie do nagrywania podcastów zdalnych. Dzięki niemu
+              mogę nagrywać podcasty z gośćmi z całego świata w jakości
+              studyjnej.
             </Tool>
             <Tool
               title="Superhuman"
@@ -173,7 +181,6 @@ export default function Uses() {
               komputerze. Dzięki niemu mogę zaoszczędzić dużo czasu na
               wykonywaniu powtarzalnych czynności.
             </Tool>
-
             <Tool
               title="Notion"
               href={"https://affiliate.notion.so/yqwx1ua15z05"}
