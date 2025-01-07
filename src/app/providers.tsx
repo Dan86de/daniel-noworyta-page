@@ -5,7 +5,7 @@ import { ThemeProvider, useTheme } from "next-themes";
 import { createContext, useEffect, useRef } from "react";
 
 function usePrevious<T>(value: T) {
-  const ref = useRef<T>();
+  const ref = useRef<T>(null);
 
   useEffect(() => {
     ref.current = value;
@@ -45,7 +45,9 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const previousPathname = usePrevious(pathname);
 
   return (
-    <AppContext.Provider value={{ previousPathname }}>
+    <AppContext.Provider
+      value={{ previousPathname: previousPathname ?? undefined }}
+    >
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ThemeWatcher />
         {children}
