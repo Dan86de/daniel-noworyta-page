@@ -1,5 +1,4 @@
 import { type StaticImageData } from "next/image";
-import React from "react";
 
 import { Button } from "@/components/Button.tsx";
 import { Author } from "@/components/ProductLanding/AboutMe.tsx";
@@ -29,44 +28,35 @@ export default function ConsultationProductPage() {
         cartUrl={"https://sklep.danielnoworyta.pl/cart/add_product/11829"}
         productPriceTag={
           <>
-            Cena konsultacji: <strong>200zł / h</strong>
+            Cena konsultacji: <strong>250zł / h</strong>
           </>
         }
       />
       <Introduction
-        title={
-          "Uwielbiam patrzeć, jak ludzie wokół mnie rozwijają swoje umiejętności i osiągają swoje cele."
-        }
+        title={"Uwielbiam patrzeć, jak ludzie wokół mnie rozwijają swoje umiejętności i osiągają swoje cele."}
         content={
           <>
             <p>
-              Myślisz o zmianie kariery i wejściu do dynamicznego świata IT?
-              Masz dosyć pracy, która nie przynosi satysfakcji i chcesz zbudować
-              przyszłość w branży, która oferuje nieograniczone możliwości
-              rozwoju? Wielu z nas marzy o tym, by stać się częścią
-              technologicznej rewolucji, ale nie wie, od czego zacząć.
+              Myślisz o zmianie kariery i wejściu do dynamicznego świata IT? Masz dosyć pracy, która nie przynosi
+              satysfakcji i chcesz zbudować przyszłość w branży, która oferuje nieograniczone możliwości rozwoju? Wielu
+              z nas marzy o tym, by stać się częścią technologicznej rewolucji, ale nie wie, od czego zacząć.
             </p>
 
             <p>
-              Niestety, proces zdobywania pierwszej pracy w IT może być
-              zniechęcający. Brak doświadczenia, niepewność co do wymaganych
-              umiejętności i ciągłe zmiany technologiczne mogą sprawić, że
-              poczujesz się przytłoczony. W dodatku, wiele dostępnych zasobów
-              jest rozproszonych i nie dostosowanych do indywidualnych potrzeb
+              Niestety, proces zdobywania pierwszej pracy w IT może być zniechęcający. Brak doświadczenia, niepewność co
+              do wymaganych umiejętności i ciągłe zmiany technologiczne mogą sprawić, że poczujesz się przytłoczony. W
+              dodatku, wiele dostępnych zasobów jest rozproszonych i nie dostosowanych do indywidualnych potrzeb
               początkujących programistów.
             </p>
             <p>
-              Dlatego oferuję konsultacje 1 na 1, które pomogą Ci zdobyć
-              pierwszą pracę jako junior front end developer. Dzięki mojemu
-              doświadczeniu w branży IT i osobistej historii zmiany kariery,
-              mogę dostarczyć Ci spersonalizowane wskazówki, które przyspieszą
-              Twoją drogę do sukcesu.
+              Dlatego oferuję konsultacje 1 na 1, które pomogą Ci zdobyć pierwszą pracę jako junior front end developer.
+              Dzięki mojemu doświadczeniu w branży IT i osobistej historii zmiany kariery, mogę dostarczyć Ci
+              spersonalizowane wskazówki, które przyspieszą Twoją drogę do sukcesu.
             </p>
             <p>
-              Podczas naszych spotkań, omówimy Twoje cele, zidentyfikujemy
-              kluczowe umiejętności do opanowania i stworzymy plan działania,
-              który pomoże Ci osiągnąć wymarzoną pracę w IT. Dołącz do mnie i
-              zacznij swoją podróż do satysfakcjonującej kariery już dziś!
+              Podczas naszych spotkań, omówimy Twoje cele, zidentyfikujemy kluczowe umiejętności do opanowania i
+              stworzymy plan działania, który pomoże Ci osiągnąć wymarzoną pracę w IT. Dołącz do mnie i zacznij swoją
+              podróż do satysfakcjonującej kariery już dziś!
             </p>
           </>
         }
@@ -117,8 +107,7 @@ export default function ConsultationProductPage() {
               author: {
                 name: "Daniel Sółkowski",
                 url: "",
-                image:
-                  "https://pliki.poprawnykod.pl/consultation_review_images/Daniel-Su%C5%82kowski-1716497602523",
+                image: "https://pliki.poprawnykod.pl/consultation_review_images/Daniel-Su%C5%82kowski-1716497602523",
               },
             },
           ],
@@ -129,8 +118,7 @@ export default function ConsultationProductPage() {
               author: {
                 name: "Bartosz Stpiczynski",
                 url: "https://bartoszstpiczynski.pl/",
-                image:
-                  "https://pliki.poprawnykod.pl/consultation_review_images/Bartosz-Stpiczynski-1717011891946",
+                image: "https://pliki.poprawnykod.pl/consultation_review_images/Bartosz-Stpiczynski-1717011891946",
               },
             },
             {
@@ -151,8 +139,7 @@ export default function ConsultationProductPage() {
               author: {
                 name: "Michał Szczepansky",
                 url: "https://github.com/szczepanskimichal",
-                image:
-                  "https://pliki.poprawnykod.pl/consultation_review_images/Michal-Szczepansky-1716899345636",
+                image: "https://pliki.poprawnykod.pl/consultation_review_images/Michal-Szczepansky-1716899345636",
               },
             },
             {
