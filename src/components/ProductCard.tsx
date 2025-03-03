@@ -48,7 +48,7 @@ export function Card({
           <h2 className="flex text-2xl items-center font-bold text-zinc-900 dark:text-zinc-100 mb-2">
             {title}
           </h2>
-          <p className="flex text-lg items-center font-semibold">{subtitle}</p>
+          <p className="flex text-lg items-center font-semibold pb-2 pt-4">{subtitle}</p>
           <ul className={"list-disc ml-3 text-sm mb-6"}>
             {sellingPoints.map((point) => (
               <li key={point} className={""}>
