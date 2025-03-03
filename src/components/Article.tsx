@@ -1,5 +1,5 @@
 import { Card } from "@/components/Card.tsx";
-import { ArticleWithSlug } from "@/lib/articles";
+import { type ArticleWithSlug } from "@/lib/articles";
 import { formatDate } from "@/lib/formatDate.ts";
 
 interface ArticleProps {
