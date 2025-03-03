@@ -9,17 +9,12 @@ export default function ShopPage() {
       <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100 py-8 text-center">
         Sklep
       </h1>
-      <div
-        className={
-          "grid lg:grid-cols-[400px_400px] 2xl:grid-cols-[400px_400px_400px] gap-12 justify-center"
-        }
-      >
+      <div className={"grid lg:grid-cols-[400px_400px] 2xl:grid-cols-[400px_400px_400px] gap-12 justify-center"}>
         <Card
           url={"/sklep/konsultacje"}
           title={"Godzina konsultacji"}
           subtitle={"Tematy w których mogę Ci pomóc:"}
-          regularPrice={492}
-          price={200}
+          price={250}
           sellingPoints={[
             "Tworzenie skutecznego CV",
             "Budowa mocnego portfolio",
@@ -27,7 +22,6 @@ export default function ShopPage() {
             "Budowa silnego wizerunku online",
             "Rozwijanie umiejętności technicznych",
           ]}
-          withSale={true}
           srcImage={consultationImage as StaticImageData}
           altImage={"Ikona konsultacji"}
           cartUrl={"https://sklep.danielnoworyta.pl/cart/add_product/11829"}
